@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+- greet
+- goodbye
+- ask_symptoms
+- ask_advice
+- ask_doctor
+- check_health_info
+- emergency_contact
+
+entities:
+- symptom
+- illness
+
+responses:
+  utter_greet:
+  - text: "Hello!"
+  - text: "Hi there!"
+
+  utter_goodbye:
+  - text: "Goodbye! Take care!"
+  - text: "Bye! Stay healthy!"
+
+  utter_ask_symptoms:
+  - text: "Please tell me more about your symptoms."
+  - text: "Can you describe your symptoms in detail?"
+
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_provide_emergency_info:
+  - text: "In case of a medical emergency in the UK, you can dial 999 or 112  for immediate assistance. These numbers can connect you to medical, fire, police, or other emergency services."
+
+actions:
+- action_notify_response_generation
+- action_print_done
+- symptom_analysis_action
+- action_gpt_default_fallback
+- action_provide_illness_advice
+- action_provide_health_info
+
+slots:
+  generated_response:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  illness:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: illness
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,13 @@
+
+#Python==3.8.19
+pandas==1.1.5
+transformers==4.43.3
+pathlib==1.0.1
+requests==2.25.1
+ruamel.yaml==0.16.12
+rasa==3.6.20
+nltk==3.8.1
+python-dotenv==1.0.1
+matplotlib==3.5.3
+torch==2.3.1+cpu
+# To install, run: pip install -r requirements.txt -f https://download.pytorch.org/whl/cpu/torch_stable.html

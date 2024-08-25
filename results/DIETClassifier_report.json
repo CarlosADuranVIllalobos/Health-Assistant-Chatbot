@@ -1,0 +1,39 @@
+{
+  "illness": {
+    "precision": 0.8674698795180723,
+    "recall": 0.5901639344262295,
+    "f1-score": 0.702439024390244,
+    "support": 122,
+    "confused_with": {
+      "symptom": 24
+    }
+  },
+  "symptom": {
+    "precision": 0.8418367346938775,
+    "recall": 0.9049360146252285,
+    "f1-score": 0.8722466960352423,
+    "support": 547,
+    "confused_with": {
+      "illness": 6
+    }
+  },
+  "micro avg": {
+    "precision": 0.8450074515648286,
+    "recall": 0.8475336322869955,
+    "f1-score": 0.8462686567164179,
+    "support": 669
+  },
+  "macro avg": {
+    "precision": 0.854653307105975,
+    "recall": 0.747549974525729,
+    "f1-score": 0.7873428602127431,
+    "support": 669
+  },
+  "weighted avg": {
+    "precision": 0.8465112394301283,
+    "recall": 0.8475336322869955,
+    "f1-score": 0.8412802745992336,
+    "support": 669
+  },
+  "accuracy": 0.9036144578313253
+}

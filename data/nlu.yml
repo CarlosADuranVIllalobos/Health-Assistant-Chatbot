@@ -1,0 +1,1232 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - howdy
+    - Hello there!
+    - Hi!
+    - Good day!
+    - Greetings!
+    - Hey!
+    - How are you?
+    - How's it going?
+    - What's up?
+    - Good to see you!
+    - Pleased to meet you.
+    - How do you do?
+    - Hey there!
+    - Hello!
+    - Hiya!
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - take care
+    - Bye!
+    - Farewell!
+    - See you later!
+    - Goodbye!
+    - Catch you later.
+    - Until next time.
+    - Bye bye!
+    - Talk to you later.
+    - Have a good one.
+    - I’m off.
+    - See ya!
+    - Have a great day!
+    - Take it easy.
+    - See you soon!
+
+- intent: ask_symptoms
+  examples: |
+    - I have [phlegm](symptom), [cough](symptom), [headache](symptom), [fever](symptom), [sore throat](symptom), and [coughs](symptom)
+    - My symptoms include [nausea](symptom) and [vomiting](symptom)
+    - I'm feeling [dizzy](symptom) with a [high fever](symptom)|
+    - I have a [headache](symptom) and [nausea](symptom).
+    - I'm feeling [feverish](symptom) with a slight [chill](symptom).
+    - My [stomach](symptom) hurts and I have been [vomiting](symptom).
+    - I have a [sore throat](symptom) and my [nose](symptom) is running.
+    - I'm experiencing [dizziness](symptom) and [fatigue](symptom).
+    - Lately, I've been having [muscle aches](symptom) and [joint pain](symptom).
+    - I'm suffering from [shortness of breath](symptom) and [chest pain](symptom).
+    - There's been a persistent [cough](symptom) and some [phlegm](symptom).
+    - I feel [weak](symptom) and have had multiple [fainting](symptom) spells.
+    - My [eyes are itchy](symptom) and I have [skin rashes](symptom).
+    - I've noticed [swelling](symptom) in my legs and [abdominal pain](symptom).
+    - [Sneezing](symptom) has been constant, along with [watery eyes](symptom).
+    - I'm experiencing [heart palpitations](symptom) and [sweating](symptom).
+    - There are [sores](symptom) in my mouth and a [loss of taste](symptom).
+    - I have [tingling](symptom) in my hands and a [loss of smell](symptom).
+    - I am experiencing a [headache](symptom), [nausea](symptom), and [dizziness](symptom).
+    - My symptoms include [coughing](symptom), [sneezing](symptom), and a [high fever](symptom).
+    - I've been dealing with [sore throat](symptom), [runny nose](symptom), and [ear pain](symptom).
+    - Recently, I have [chest pain](symptom), [shortness of breath](symptom), and [fatigue](symptom).
+    - I feel [muscle pain](symptom), [joint pain](symptom), and [weakness](symptom) throughout my body.
+    - Symptoms present are [itchy eyes](symptom), [skin rash](symptom), and [swelling](symptom) around my ankles.
+    - I have had persistent [abdominal pain](symptom), [vomiting](symptom), and [diarrhea](symptom) since yesterday.
+    - I am noticing [tingling](symptom) in my fingers, [numbness](symptom) in my toes, and [muscle cramps](symptom).
+    - I'm suffering from [back pain](symptom), [headache](symptom), and [neck stiffness](symptom).
+    - I've developed [sneezing](symptom), [coughing](symptom), and [throat irritation](symptom) since this morning.
+    - I have a [fever](symptom), [chills](symptom), and [night sweats](symptom).
+    - There are [sores](symptom) on my lips, [ulcers](symptom) in my mouth, and [swollen gums](symptom).
+    - I am dealing with [eye redness](symptom), [sore eyes](symptom), and [visual disturbances](symptom).
+    - I experience [palpitations](symptom), [excessive sweating](symptom), and [dizziness](symptom) frequently.
+    - I've felt [nausea](symptom), [heartburn](symptom), and [acid reflux](symptom) after eating.
+    - My symptoms are [fatigue](symptom), [loss of appetite](symptom), and [weight loss](symptom).
+    - I keep having [cold flashes](symptom), [hot flashes](symptom), and [extreme fatigue](symptom).
+    - Symptoms include [persistent cough](symptom), [phlegm production](symptom), and a feeling of [tightness in the chest](symptom).
+    - I've had [stomach cramps](symptom), [bloating](symptom), and [gas](symptom) for a few days now.
+    - There is [pain](symptom) in my lower back, [cramps](symptom) in my legs, and [stiffness](symptom) in my joints.
+    - I am experiencing [itching](symptom), [skin rash](symptom), and [nodal skin eruptions](symptom).
+    - I have [continuous sneezing](symptom), [shivering](symptom), and [chills](symptom).
+    - My symptoms are [joint pain](symptom), [stomach pain](symptom), and [acidity](symptom).
+    - I've noticed [ulcers on my tongue](symptom), [muscle wasting](symptom), and [vomiting](symptom).
+    - I suffer from [burning micturition](symptom), [spotting during urination](symptom), and [fatigue](symptom).
+    - I've been feeling [anxiety](symptom), [cold hands and feet](symptom), and [mood swings](symptom).
+    - My issues include [weight loss](symptom), [lethargy](symptom), and [patches in my throat](symptom).
+    - I'm experiencing [irregular sugar levels](symptom), [cough](symptom), and [high fever](symptom).
+    - I have symptoms like [sunken eyes](symptom), [breathlessness](symptom), and [excessive sweating](symptom).
+    - I'm dealing with [dehydration](symptom), [indigestion](symptom), and [headache](symptom).
+    - I have [yellowish skin](symptom), [dark urine](symptom), and [nausea](symptom).
+    - My symptoms include [loss of appetite](symptom), [pain behind the eyes](symptom), and [back pain](symptom).
+    - I am suffering from [constipation](symptom), [abdominal pain](symptom), and [diarrhoea](symptom).
+    - I have a [mild fever](symptom), [yellow urine](symptom), and [yellowing of eyes](symptom).
+    - I am experiencing [acute liver failure](symptom), [fluid overload](symptom), and [swelling of stomach](symptom).
+    - I notice [swelled lymph nodes](symptom), [malaise](symptom), and [blurred and distorted vision](symptom).
+    - I have [phlegm](symptom), [throat irritation](symptom), and [redness of eyes](symptom).
+    - I'm suffering from [sinus pressure](symptom), [runny nose](symptom), and [congestion](symptom).
+    - My symptoms are [chest pain](symptom), [weakness in limbs](symptom), and [fast heart rate](symptom).
+    - I have [pain during bowel movements](symptom), [pain in the anal region](symptom), and [bloody stool](symptom).
+    - I am experiencing [irritation in the anus](symptom), [neck pain](symptom), and [dizziness](symptom).
+    - I feel [cramps](symptom), [bruising](symptom), and [obesity](symptom).
+    - I have symptoms like [swollen legs](symptom), [swollen blood vessels](symptom), and [puffy face and eyes](symptom).
+    - I'm dealing with [enlarged thyroid](symptom), [brittle nails](symptom), and [swollen extremities](symptom).
+    - My issues include [excessive hunger](symptom), [extra marital contacts](symptom), and [drying and tingling lips](symptom).
+    - I experience [slurred speech](symptom), [knee pain](symptom), and [hip joint pain](symptom).
+    - I have [muscle weakness](symptom), [stiff neck](symptom), and [swelling joints](symptom).
+    - I am suffering from [movement stiffness](symptom), [spinning movements](symptom), and [loss of balance](symptom).
+    - My symptoms are [unsteadiness](symptom), [weakness of one body side](symptom), and [loss of smell](symptom).
+    - I notice [bladder discomfort](symptom), [foul smell of urine](symptom), and [continuous feel of urine](symptom).
+    - I'm dealing with [passage of gases](symptom), [internal itching](symptom), and [toxic look](symptom).
+    - I have [depression](symptom), [irritability](symptom), and [muscle pain](symptom).
+    - My symptoms include [altered sensorium](symptom), [red spots over body](symptom), and [belly pain](symptom).
+    - I am suffering from [abnormal menstruation](symptom), [dischromic patches](symptom), and [watering from eyes](symptom).
+    - I have [increased appetite](symptom), [polyuria](symptom), and [family history](symptom).
+    - My issues include [mucoid sputum](symptom), [rusty sputum](symptom), and [lack of concentration](symptom).
+    - I experience [visual disturbances](symptom), [receiving blood transfusion](symptom), and [receiving unsterile injections](symptom).
+    - I'm dealing with [coma](symptom), [stomach bleeding](symptom), and [distention of abdomen](symptom).
+    - I have [history of alcohol consumption](symptom), [fluid overload](symptom), and [blood in sputum](symptom).
+    - My symptoms are [prominent veins on calf](symptom), [palpitations](symptom), and [painful walking](symptom).
+    - I am experiencing [pus filled pimples](symptom), [blackheads](symptom), and [scurring](symptom).
+    - I suffer from [skin peeling](symptom), [silver like dusting](symptom), and [small dents in nails](symptom).
+    - I have [inflammatory nails](symptom), [blister](symptom), and [red sore around nose](symptom).
+    - I notice [yellow crust ooze](symptom) and [weakness](symptom).
+    - I have a [cough](symptom) and [fever](symptom).
+    - I feel [nauseous](symptom) and have been [vomiting](symptom).
+    - I'm experiencing [headaches](symptom) frequently.
+    - My [throat](symptom) is sore and I feel [chills](symptom).
+    - I've been feeling very [dizzy](symptom) lately.
+    - I have [stomach pain](symptom) and [diarrhea](symptom).
+    - There's a constant [ache](symptom) in my muscles.
+    - I'm dealing with [sneezing](symptom) and a [runny nose](symptom).
+    - I feel [fatigued](symptom) and have [joint pain](symptom).
+    - I'm suffering from [chest tightness](symptom) and [shortness of breath](symptom)
+    - I have a [cough](symptom).
+    - I feel [nauseous](symptom).
+    - I'm experiencing a [headache](symptom).
+    - My [stomach](symptom) hurts.
+    - I've been feeling [dizzy](symptom) lately.
+    - I've noticed some [itching](symptom) on my skin.
+    - I have a [sore throat](symptom).
+    - There's a constant [ache](symptom) in my back.
+    - I'm suffering from [fever](symptom).
+    - I feel [chills](symptom) throughout my body.
+    - I've been having [joint pain](symptom).
+    - I am dealing with [fatigue](symptom).
+    - I've developed a [runny nose](symptom).
+    - I'm feeling [shortness of breath](symptom).
+    - I've noticed [swelling](symptom) in my legs.
+    - My [eyes are itchy](symptom).
+    - I'm experiencing [chest pain](symptom).
+    - I have [muscle cramps](symptom).
+    - I've been dealing with [heart palpitations](symptom).
+    - I notice [bladder discomfort](symptom).
+    - I have [phlegm](symptom), [cough](symptom), [headache](symptom), [fever](symptom), [sore throat](symptom), and [cough](symptom)
+    - My symptoms include [nausea](symptom) and [vomiting](symptom)
+    - I'm feeling [dizzy](symptom) with a [high fever](symptom)
+    - I have a [headache](symptom) and [nausea](symptom)
+    - I'm feeling [feverish](symptom) with a slight [chill](symptom)
+    - My [stomach](symptom) hurts and I have been [vomiting](symptom)
+    - I have a [sore throat](symptom) and my [nose](symptom) is running
+    - I'm experiencing [dizziness](symptom) and [fatigue](symptom)
+
+- intent: ask_advice
+  examples: |
+    - What should I take for a [headache](symptom)?
+    - How do I relieve [back pain](symptom)?
+    - Any suggestions for a [sore throat](symptom)?
+    - What's the best treatment for [insomnia](symptom)?
+    - How can I reduce [anxiety](symptom)?
+    - What remedies work for an [upset stomach](symptom)?
+    - Can you recommend something for [allergies](symptom)?
+    - What should I do if I feel [tired all the time](symptom)?
+    - How to deal with [stress](symptom)?
+    - What are good natural remedies for [migraines](symptom)?
+    - Tips for improving [sleep](symptom)?
+    - How to lower [high blood pressure](symptom)?
+    - Any advice for dealing with [colds](symptom)?
+    - What should I eat for better [digestion](symptom)?
+
+- intent: ask_doctor
+  examples: |
+    - Should I consult a doctor for a [fever](symptom)?
+    - Do I need to see a doctor for this [rash](symptom)?
+    - Is it time to visit a healthcare professional?
+    - When is it necessary to get medical help?
+    - Do I need a doctor's appointment for [chest pain](symptom)?
+    - Should I visit a specialist for my symptoms?
+    - Is this something a doctor should look at?
+    - When should someone seek medical advice?
+    - Is this serious enough to see a doctor?
+    - Do these symptoms require a doctor's visit?
+    - Should I go to the emergency room?
+    - Do I need urgent medical care?
+    - At what point should I consider seeing a physician?
+    - Who is the right specialist to consult for my condition?
+
+- intent: check_health_info
+  examples: |
+    - Tell me about [diabetes](illness)
+    - What is [hypertension](illness)?
+    - I need information on [migraine](illness)
+    - Can you explain what [arthritis](illness) is?
+    - Details about [chronic cholestasis](illness) please
+    - What do I need to know about [heart attack](illness)?
+    - Explain [tuberculosis](illness) to me
+    - How serious is [hepatitis B](illness)?
+    - What are the symptoms of [osteoporosis](illness)?
+    - I heard about [psoriasis](illness), what is that?
+    - Information on [fungal infection](illness)
+    - How to deal with [allergy](illness)?
+    - Give details about [GERD](illness)
+    - What causes [chronic cholestasis](illness)?
+    - Symptoms of [drug reaction](illness)
+    - Explain what [peptic ulcer disease](illness) is
+    - Treatment options for [AIDS](illness)
+    - Overview of [diabetes](illness)
+    - What is [gastroenteritis](illness)?
+    - Control measures for [bronchial asthma](illness)
+    - How to prevent [hypertension](illness)?
+    - Best treatments for [migraine](illness)
+    - What does [cervical spondylosis](illness) affect?
+    - How is [paralysis due to brain hemorrhage](illness) treated?
+    - Why does [jaundice](illness) occur?
+    - What are the risks of [malaria](illness)?
+    - How to cure [chickenpox](illness)?
+    - Symptoms and treatment of [dengue](illness)
+    - How dangerous is [typhoid](illness)?
+    - Preventative measures for [hepatitis A](illness)
+    - Long term effects of [hepatitis B](illness)
+    - Complications from [hepatitis C](illness)
+    - Discuss [hepatitis D](illness) risks
+    - Overview on [hepatitis E](illness)
+    - Effects of [alcoholic hepatitis](illness) on the liver
+    - What are the stages of [tuberculosis](illness)?
+    - Common cold relief for [common cold](illness)
+    - What leads to [pneumonia](illness)?
+    - Tell me about [diabetes](illness)
+    - What is [diabetes](illness)?
+    - Information on [diabetes](illness)
+    - Can you explain what [diabetes](illness) is?
+    - What should I know about [diabetes](illness)?
+    - Symptoms of [dimorphic hemorrhoids piles](illness)
+    - Early signs of a [heart attack](illness)
+    - How to treat [varicose veins](illness)?
+    - What causes [hypothyroidism](illness)?
+    - Information about [hyperthyroidism](illness)
+    - What to do if experiencing [hypoglycemia](illness)?
+    - Managing [osteoarthritis](illness) pain
+    - How to reduce [arthritis](illness) inflammation?
+    - Treatment for [vertigo](illness)
+    - Best skincare for [acne](illness)
+    - How to diagnose [urinary tract infection](illness)?
+    - Effective treatments for [psoriasis](illness)
+    - How to prevent [impetigo](illness)?
+    - What is [leukemia](illness)?
+    - Treatments available for [lymphoma](illness)
+    - Managing symptoms of [melanoma](illness)
+    - How is [breast cancer](illness) detected?
+    - Learn about [prostate cancer](illness)
+    - Early symptoms of [lung cancer](illness)
+    - What is [colorectal cancer](illness)?
+    - Explain the progression of [ovarian cancer](illness)
+    - How to live with [pancreatic cancer](illness)
+    - What are common indicators of [hypoglycemia](illness)?
+    - Can you tell me the dangers associated with [hypoglycemia](illness)?
+    - What should I eat if I have [hypoglycemia](illness)?
+    - Is [hypoglycemia](illness) related to diabetes?
+    - How do I manage [hypoglycemia](illness) without medication?
+    - What triggers [psoriasis](illness) flare-ups?
+    - Are there natural remedies for [psoriasis](illness)?
+    - How is [psoriasis](illness) diagnosed?
+    - Can [psoriasis](illness) lead to other health issues?
+    - What skin care routines are recommended for someone with [psoriasis](illness)?
+    - What are the primary symptoms of [tuberculosis](illness)?
+    - How contagious is [tuberculosis](illness)?
+    - What treatments are most effective for [tuberculosis](illness)?
+    - Can [tuberculosis](illness) be completely cured?
+    - What preventive measures can reduce the risk of [tuberculosis](illness)?- Tell me about [flu](illness).
+    - What should I know about [influenza](illness)?
+    - Information on [coronavirus](illness).
+    - What is [COVID-19](illness) and how dangerous is it?
+    - Give me details about the [flu](illness) and its treatment.
+    - How is [coronavirus](illness) treated?
+    - What are the preventive measures for [flu](illness)?
+    - What advice can you give for someone with [flu](illness)?
+    - How does [coronavirus](illness) spread?
+    - Are there vaccines for [COVID-19](illness)?
+
+- intent:  emergency_contact
+  examples: |
+    - I need to go to the emergency room.
+    - What's the number for emergency services?
+    - How do I handle a medical emergency?
+    - Who do I call if I have a severe allergic reaction
+
+- intent: nlu_fallback
+  examples: |
+    - What time is it?
+    - Can you tell me today's date?
+    - What’s the latest news?
+    - How do I reset my password?
+    - What movies are playing tonight?
+    - Who won the basketball game last night?
+    - Can you book a taxi for me?
+    - What are the stock market figures today?
+    - Is there a sale at the local mall?
+    - How do I change my phone settings?
+    - Can you help me with my homework?
+    - What's the best way to cook pasta?
+    - Do you know any good jokes?
+    - What are the tourist attractions nearby?
+    - How do I connect to Wi-Fi?
+    - Can you download files for me?
+    - What are the trending topics on Twitter?
+    - Can you play music?
+    - How do I make a website?
+    - What's the exchange rate for euros?
+    - Can you recommend a good book to read?
+    - Where can I find video game reviews?
+    - What's your favorite color?
+    - Can you find me a job?
+    - How to learn a new language?
+    - What should I wear to a wedding?
+    - Where can I watch the latest series online?
+    - Can you order food for me?
+    - What are the ingredients in a margarita?
+    - How do I back up my data?
+    - Can you help me shop online?
+    - What’s the best phone to buy?
+    - Can you find a recipe for apple pie?
+    - How do I update my software?
+    - Who are the nominees for the Oscars?
+    - Can you check my email?
+    - How do I unsubscribe from this service?
+    - What is the capital of France?
+    - Can you teach me to play chess?
+    - Where is the nearest ATM?
+    - Can you set an alarm for me?
+    - How to tie a tie?
+    - What plants are good for indoor gardening?
+    - Who is the richest person in the world?
+    - What are some safe driving tips?
+    - How do I clean my laptop screen?
+    - What is the best gift for a birthday?
+    - Where can I volunteer my time?
+    - How do you make a cocktail?
+    - What are the visa requirements for Canada?
+
+
+- synonym: itching
+  examples: |
+    - pruritus
+    - itchy skin
+
+- synonym: skin rash
+  examples: |
+    - rash
+    - dermatitis
+
+- synonym: nodal skin eruptions
+  examples: |
+    - skin bumps
+    - skin nodules
+
+- synonym: continuous sneezing
+  examples: |
+    - nonstop sneezing
+    - persistent sneezing
+
+- synonym: shivering
+  examples: |
+    - trembling
+    - chills
+
+- synonym: chills
+  examples: |
+    - cold chills
+    - shivering
+
+- synonym: joint pain
+  examples: |
+    - arthralgia
+    - joint ache
+
+- synonym: stomach pain
+  examples: |
+    - abdominal pain
+    - belly ache
+
+- synonym: acidity
+  examples: |
+    - heartburn
+    - acid reflux
+
+- synonym: ulcers on tongue
+  examples: |
+    - mouth ulcers
+    - canker sores
+
+- synonym: muscle wasting
+  examples: |
+    - muscle atrophy
+    - muscle loss
+
+- synonym: vomiting
+  examples: |
+    - throwing up
+    - emesis
+
+- synonym: burning micturition
+  examples: |
+    - burning urination
+    - dysuria
+
+- synonym: spotting urination
+  examples: |
+    - urinary spotting
+    - spotting during urination
+
+- synonym: fatigue
+  examples: |
+    - tiredness
+    - exhaustion
+
+- synonym: weight gain
+  examples: |
+    - increased weight
+    - gaining weight
+
+- synonym: anxiety
+  examples: |
+    - nervousness
+    - worry
+
+- synonym: cold hands and feet
+  examples: |
+    - cold extremities
+    - cold limbs
+
+- synonym: mood swings
+  examples: |
+    - emotional swings
+    - mood changes
+
+- synonym: weight loss
+  examples: |
+    - losing weight
+    - weight reduction
+
+- synonym: restlessness
+  examples: |
+    - agitation
+    - unease
+
+- synonym: lethargy
+  examples: |
+    - sluggishness
+    - lack of energy
+
+- synonym: patches in throat
+  examples: |
+    - throat spots
+    - throat patches
+
+- synonym: irregular sugar level
+  examples: |
+    - fluctuating blood sugar
+    - unstable blood sugar
+
+- synonym: cough
+  examples: |
+    - coughing
+    - persistent cough
+
+- synonym: high fever
+  examples: |
+    - severe fever
+    - intense fever
+
+- synonym: sunken eyes
+  examples: |
+    - hollow eyes
+    - depressed eyes
+
+- synonym: breathlessness
+  examples: |
+    - shortness of breath
+    - dyspnea
+
+- synonym: sweating
+  examples: |
+    - perspiration
+    - excessive sweating
+
+- synonym: dehydration
+  examples: |
+    - lack of water
+    - dryness
+
+- synonym: indigestion
+  examples: |
+    - dyspepsia
+    - upset stomach
+
+- synonym: headache
+  examples: |
+    - head pain
+    - cephalalgia
+
+- synonym: yellowish skin
+  examples: |
+    - jaundiced skin
+    - yellow skin
+
+- synonym: dark urine
+  examples: |
+    - dark colored urine
+    - brown urine
+
+- synonym: nausea
+  examples: |
+    - feeling sick
+    - queasiness
+
+- synonym: loss of appetite
+  examples: |
+    - reduced appetite
+    - lack of hunger
+
+- synonym: pain behind the eyes
+  examples: |
+    - orbital pain
+    - eye pain
+
+- synonym: back pain
+  examples: |
+    - backache
+    - pain in the back
+
+- synonym: constipation
+  examples: |
+    - difficulty in bowel movements
+    - irregular bowel movements
+
+- synonym: abdominal pain
+  examples: |
+    - belly ache
+    - pain in the stomach
+
+- synonym: diarrhoea
+  examples: |
+    - diarrhea
+    - loose stools
+
+- synonym: mild fever
+  examples: |
+    - low fever
+    - slight fever
+
+- synonym: yellow urine
+  examples: |
+    - bright yellow urine
+    - colored urine
+
+- synonym: yellowing of eyes
+  examples: |
+    - jaundiced eyes
+    - yellow eyes
+
+- synonym: acute liver failure
+  examples: |
+    - liver failure
+    - hepatic failure
+
+- synonym: fluid overload
+  examples: |
+    - fluid retention
+    - water retention
+
+- synonym: swelling of stomach
+  examples: |
+    - abdominal swelling
+    - bloated stomach
+
+- synonym: swelled lymph nodes
+  examples: |
+    - swollen glands
+    - enlarged lymph nodes
+
+- synonym: malaise
+  examples: |
+    - general discomfort
+    - feeling unwell
+
+- synonym: blurred and distorted vision
+  examples: |
+    - blurry vision
+    - vision impairment
+
+- synonym: phlegm
+  examples: |
+    - mucus
+    - sputum
+
+- synonym: throat irritation
+  examples: |
+    - sore throat
+    - throat discomfort
+
+- synonym: redness of eyes
+  examples: |
+    - bloodshot eyes
+    - eye redness
+
+- synonym: sinus pressure
+  examples: |
+    - sinus pain
+    - pressure in sinuses
+
+- synonym: runny nose
+  examples: |
+    - nasal discharge
+    - rhinorrhea
+
+- synonym: congestion
+  examples: |
+    - nasal congestion
+    - stuffy nose
+
+- synonym: chest pain
+  examples: |
+    - pain in chest
+    - thoracic pain
+
+- synonym: weakness in limbs
+  examples: |
+    - limb weakness
+    - weak arms and legs
+
+- synonym: fast heart rate
+  examples: |
+    - tachycardia
+    - rapid heartbeat
+
+- synonym: pain during bowel movements
+  examples: |
+    - painful defecation
+    - rectal pain
+
+- synonym: pain in anal region
+  examples: |
+    - anal pain
+    - discomfort in anal area
+
+- synonym: bloody stool
+  examples: |
+    - blood in stool
+    - hematochezia
+
+- synonym: irritation in anus
+  examples: |
+    - anal irritation
+    - itching in anus
+
+- synonym: neck pain
+  examples: |
+    - pain in the neck
+    - cervical pain
+
+- synonym: dizziness
+  examples: |
+    - lightheadedness
+    - feeling dizzy
+
+- synonym: cramps
+  examples: |
+    - muscle cramps
+    - spasms
+
+- synonym: bruising
+  examples: |
+    - contusions
+    - bruises
+
+- synonym: obesity
+  examples: |
+    - overweight
+    - excessive body weight
+
+- synonym: swollen legs
+  examples: |
+    - leg swelling
+    - edema in legs
+
+- synonym: swollen blood vessels
+  examples: |
+    - varicose veins
+    - enlarged veins
+
+- synonym: puffy face and eyes
+  examples: |
+    - facial swelling
+    - swollen eyes
+
+- synonym: enlarged thyroid
+  examples: |
+    - goiter
+    - thyroid enlargement
+
+- synonym: brittle nails
+  examples: |
+    - weak nails
+    - fragile nails
+
+- synonym: swollen extremities
+  examples: |
+    - edema
+    - swelling in arms and legs
+
+- synonym: excessive hunger
+  examples: |
+    - increased appetite
+    - hyperphagia
+
+- synonym: extra marital contacts
+  examples: |
+    - infidelity
+    - having an affair
+
+- synonym: drying and tingling lips
+  examples: |
+    - chapped lips
+    - lip tingling
+
+- synonym: slurred speech
+  examples: |
+    - dysarthria
+    - speech disturbance
+
+- synonym: knee pain
+  examples: |
+    - pain in the knee
+    - knee discomfort
+
+- synonym: hip joint pain
+  examples: |
+    - pain in the hip
+    - hip pain
+
+- synonym: muscle weakness
+  examples: |
+    - weak muscles
+    - muscular weakness
+
+- synonym: stiff neck
+  examples: |
+    - neck stiffness
+    - rigid neck
+
+- synonym: swelling joints
+  examples: |
+    - joint swelling
+    - inflamed joints
+
+- synonym: movement stiffness
+  examples: |
+    - restricted movement
+    - stiffness in movement
+
+- synonym: spinning movements
+  examples: |
+    - vertigo
+    - dizziness with spinning
+
+- synonym: loss of balance
+  examples: |
+    - unbalanced
+    - instability
+
+- synonym: unsteadiness
+  examples: |
+    - lack of stability
+    - imbalance
+
+- synonym: weakness of one body side
+  examples: |
+    - hemiparesis
+    - unilateral weakness
+
+- synonym: loss of smell
+  examples: |
+    - anosmia
+    - inability to smell
+
+- synonym: bladder discomfort
+  examples: |
+    - bladder pain
+    - discomfort in bladder
+
+- synonym: foul smell of urine
+  examples: |
+    - smelly urine
+    - strong urine odor
+
+- synonym: continuous feel of urine
+  examples: |
+    - persistent urge to urinate
+    - constant urinary sensation
+
+- synonym: passage of gases
+  examples: |
+    - flatulence
+    - passing gas
+
+- synonym: internal itching
+  examples: |
+    - itching inside
+    - deep itch
+
+- synonym: toxic look (typhos)
+  examples: |
+    - typhoid appearance
+    - toxic appearance
+    - toxic look 
+
+- synonym: depression
+  examples: |
+    - feeling depressed
+    - low mood
+
+- synonym: irritability
+  examples: |
+    - easily irritated
+    - irritableness
+
+- synonym: muscle pain
+  examples: |
+    - myalgia
+    - muscle ache
+
+- synonym: altered sensorium
+  examples: |
+    - confusion
+    - disoriented state
+
+- synonym: red spots over body
+  examples: |
+    - rash with red spots
+    - red body spots
+
+- synonym: belly pain
+  examples: |
+    - abdominal discomfort
+    - pain in abdomen
+
+- synonym: abnormal menstruation
+  examples: |
+    - irregular periods
+    - menstrual irregularity
+
+- synonym: dischromic patches
+  examples: |
+    - discolored skin patches
+    - skin discoloration
+
+- synonym: watering from eyes
+  examples: |
+    - teary eyes
+    - excessive eye watering
+
+- synonym: increased appetite
+  examples: |
+    - hyperphagia
+    - heightened hunger
+
+- synonym: polyuria
+  examples: |
+    - frequent urination
+    - excessive urination
+
+- synonym: family history
+  examples: |
+    - genetic history
+    - hereditary conditions
+
+- synonym: mucoid sputum
+  examples: |
+    - mucous sputum
+    - phlegm with mucus
+- synonym: rusty sputum
+  examples: |
+    - brownish sputum
+    - rust-colored phlegm
+
+- synonym: lack of concentration
+  examples: |
+    - difficulty focusing
+    - poor concentration
+
+- synonym: visual disturbances
+  examples: |
+    - impaired vision
+    - vision problems
+
+- synonym: receiving blood transfusion
+  examples: |
+    - blood transfusion
+    - transfusion of blood
+
+- synonym: receiving unsterile injections
+  examples: |
+    - unsafe injections
+    - non-sterile injections
+
+- synonym: coma
+  examples: |
+    - unconscious state
+    - deep unconsciousness
+
+- synonym: stomach bleeding
+  examples: |
+    - gastrointestinal bleeding
+    - bleeding in the stomach
+
+- synonym: distention of abdomen
+  examples: |
+    - abdominal distension
+    - swollen abdomen
+
+- synonym: history of alcohol consumption
+  examples: |
+    - alcohol use
+    - drinking history
+
+- synonym: fluid overload
+  examples: |
+    - fluid retention
+    - volume overload
+
+- synonym: blood in sputum
+  examples: |
+    - hemoptysis
+    - bloody phlegm
+
+- synonym: prominent veins on calf
+  examples: |
+    - visible veins on legs
+    - bulging veins on calf
+
+- synonym: palpitations
+  examples: |
+    - heart palpitations
+    - rapid heart beat
+
+- synonym: painful walking
+  examples: |
+    - difficulty walking
+    - pain while walking
+
+- synonym: pus filled pimples
+  examples: |
+    - pustules
+    - pus-filled acne
+
+- synonym: blackheads
+  examples: |
+    - open comedones
+    - skin blackheads
+
+- synonym: scurring
+  examples: |
+    - scaly skin
+    - flaking skin
+
+- synonym: skin peeling
+  examples: |
+    - peeling of skin
+    - skin flaking
+
+- synonym: silver like dusting
+  examples: |
+    - silvery scaling
+    - silver scaling on skin
+
+- synonym: small dents in nails
+  examples: |
+    - nail pitting
+    - pitted nails
+
+- synonym: inflammatory nails
+  examples: |
+    - nail inflammation
+    - inflamed nails
+
+- synonym: blister
+  examples: |
+    - skin blister
+    - fluid-filled bump
+
+- synonym: red sore around nose
+  examples: |
+    - perinasal redness
+    - red area near nose
+
+- synonym: yellow crust ooze
+  examples: |
+    - crusted yellow discharge
+    - yellow scabbing
+
+- synonym: fungal infection
+  examples: |
+    - mycosis
+    - tinea
+
+- synonym: allergy
+  examples: |
+    - allergic reaction
+    - hypersensitivity
+
+- synonym: gerd
+  examples: |
+    - gastroesophageal reflux disease
+    - acid reflux
+
+- synonym: chronic cholestasis
+  examples: |
+    - long-term bile flow stoppage
+    - bile duct blockage
+
+- synonym: drug reaction
+  examples: |
+    - adverse drug reaction
+    - medication side effect
+
+- synonym: peptic ulcer disease
+  examples: |
+    - stomach ulcer
+    - gastric ulcer
+
+- synonym: aids
+  examples: |
+    - acquired immune deficiency syndrome
+    - HIV disease
+
+- synonym: diabetes
+  examples: |
+    - diabetes mellitus
+    - high blood sugar
+
+- synonym: gastroenteritis
+  examples: |
+    - stomach flu
+    - intestinal flu
+
+- synonym: bronchial asthma
+  examples: |
+    - asthma
+    - reactive airway disease
+
+- synonym: hypertension
+  examples: |
+    - high blood pressure
+    - arterial hypertension
+
+- synonym: migraine
+  examples: |
+    - severe headache
+    - migraine headache
+
+- synonym: cervical spondylosis
+  examples: |
+    - neck arthritis
+    - cervical osteoarthritis
+
+- synonym: paralysis (brain hemorrhage)
+  examples: |
+    - stroke-induced paralysis
+    - cerebral hemorrhage paralysis
+
+- synonym: jaundice
+  examples: |
+    - icterus
+    - yellow skin and eyes
+
+- synonym: malaria
+  examples: |
+    - plasmodium infection
+    - mosquito-borne disease
+
+- synonym: chickenpox
+  examples: |
+    - varicella
+    - chicken pox
+
+- synonym: dengue
+  examples: |
+    - dengue fever
+    - breakbone fever
+
+- synonym: typhoid
+  examples: |
+    - typhoid fever
+    - enteric fever
+
+- synonym: hepatitis a
+  examples: |
+    - hep a
+    - infectious hepatitis
+
+- synonym: hepatitis b
+  examples: |
+    - hep b
+    - serum hepatitis
+
+- synonym: hepatitis c
+  examples: |
+    - hep c
+    - HCV
+
+- synonym: hepatitis d
+  examples: |
+    - hep d
+    - delta hepatitis
+
+- synonym: hepatitis e
+  examples: |
+    - hep e
+    - enterically transmitted hepatitis
+
+- synonym: alcoholic hepatitis
+  examples: |
+    - liver inflammation from alcohol
+    - alcohol-induced liver disease
+
+- synonym: tuberculosis
+  examples: |
+    - tb
+    - consumption
+
+- synonym: common cold
+  examples: |
+    - cold
+    - upper respiratory infection
+
+- synonym: pneumonia
+  examples: |
+    - lung infection
+    - pneumonitis
+
+- synonym: dimorphic hemorrhoids (piles)
+  examples: |
+    - hemorrhoids
+    - piles
+    - dimorphic hemorrhoids piles
+
+- synonym: heart attack
+  examples: |
+    - myocardial infarction
+    - cardiac arrest
+
+- synonym: varicose veins
+  examples: |
+    - varicosities
+    - varicose
+
+- synonym: hypothyroidism
+  examples: |
+    - underactive thyroid
+    - low thyroid
+
+- synonym: hyperthyroidism
+  examples: |
+    - overactive thyroid
+    - high thyroid
+
+- synonym: hypoglycemia
+  examples: |
+    - low blood sugar
+    - insulin shock
+
+- synonym: osteoarthritis
+  examples: |
+    - degenerative joint disease
+    - wear and tear arthritis
+
+- synonym: arthritis
+  examples: |
+    - joint inflammation
+    - joint disease
+
+- synonym: vertigo
+  examples: |
+    - dizziness
+    - balance disorder
+
+- synonym: acne
+  examples: |
+    - pimples
+    - zits
+
+- synonym: urinary tract infection
+  examples: |
+    - uti
+    - bladder infection
+
+- synonym: psoriasis
+  examples: |
+    - skin scaling
+    - plaque psoriasis
+
+- synonym: impetigo
+  examples: |
+    - skin infection
+    - contagious skin rash
+    
+- synonym: flu
+  examples: |
+    - influenza
+    - common flu
+
+- synonym: coronavirus
+  examples: |
+    - COVID-19
+    - novel coronavirus

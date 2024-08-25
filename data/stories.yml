@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+- story: greet and ask symptoms
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_symptoms
+  - intent: ask_symptoms
+  - action: action_notify_response_generation
+  - action: symptom_analysis_action
+
+# - story: User asks about symptoms
+#   steps:
+#   - intent: ask_symptoms
+#   - action: action_notify_response_generation
+#   - action: symptom_analysis_action
+
+- story: User asks for advice
+  steps:
+  - intent: ask_advice
+  - action: action_notify_response_generation
+  - action: symptom_analysis_action
+
+- story: User asks about seeing a doctor
+  steps:
+  - intent: ask_doctor
+  - action: action_notify_response_generation
+  - action: symptom_analysis_action
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: inquire about health information
+  steps:
+  - intent: check_health_info
+    entities:
+      - illness: "{{illness}}" # Example entity; adjust based on actual use case
+  - slot_was_set:
+      - illness: "{{illness}}"
+  - action: action_provide_health_info
+
+- story: emergency contact info
+  steps:
+  - intent: emergency_contact
+  - action: utter_provide_emergency_info

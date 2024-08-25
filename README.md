@@ -1,53 +1,123 @@
 # Travel Spanish Chatbot
 
-This repository demonstrates how to build a customized chatbot AI for learning and practicing useful Spanish for traveling using Python and the ChatterBot Corpus. It covers data preprocessing, chatbot training, and evaluation.
+This repository demonstrates how to build a customized AI chatbot to help users practice and learn useful Spanish for traveling. The chatbot is designed to handle conversations in both English and Spanish, making it an ideal tool for English speakers looking to improve their Spanish language skills.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Chatbot Training](#chatbot-training)
+- [Modeling](#modeling)
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
-
-This project focuses on building a customized travel Spanish chatbot using Python. It includes scripts for data preprocessing, training a chatbot model, and evaluating the chatbot. The chatbot can be fine-tuned to respond to specific travel-related queries and provide relevant information based on the trained dataset.
-
 ## Dataset
 
-The dataset used is the ChatterBot Corpus, which includes a variety of conversational data. For this project, we have customized the corpus to include travel-specific dialogues in Spanish.
+The chatbot is trained using a custom bilingual corpus that includes conversations in both English and Spanish. This corpus helps the chatbot understand and respond in both languages, facilitating language learning.
 
-### Example Dataset Structure
+### Citation of the Dataset
 
-The dataset is organized in .yml files with the following structure:
-
-- `categories`: Categories of the conversation
-- `conversations`: List of dialogues
+The `bilingual_corpus.yml` file contains hand-crafted conversations specifically designed for this project. If you use this repository, please cite it appropriately.
 
 ## Project Structure
-
-Travel_Spanish_Chatbot/
+Travel_Chatbot/
 
 ```plaintext
-Travel_Spanish_Chatbot/
+Travel_Chatbot/
 ├── data/
-│   ├── travel_corpus.yml             # Custom travel-specific dialogues
+│   ├── bilingual_corpus.yml          # Bilingual conversation corpus
 ├── notebooks/
 │   ├── data_preprocessing.ipynb      # Data preprocessing and EDA
-│   ├── chatbot_training.ipynb        # Chatbot training
-│   ├── chatbot_evaluation.ipynb      # Chatbot evaluation
+│   ├── model_training.ipynb          # Model training and tuning
+│   ├── model_evaluation.ipynb        # Model evaluation
 ├── scripts/
 │   ├── preprocess.py                 # Data preprocessing script
-│   ├── train_chatbot.py              # Chatbot training script
-│   ├── evaluate_chatbot.py           # Chatbot evaluation script
+│   ├── train.py                      # Model training script
+│   ├── evaluate.py                   # Model evaluation script
 ├── models/
 │   ├── chatbot_model.pkl             # Trained chatbot model
 ├── results/
 │   ├── evaluation_metrics.csv        # Evaluation metrics
 │   ├── confusion_matrix.png          # Confusion matrix
 ├── README.md                         # Project README
+```
+
+## Usage
+
+1. **Data Preprocessing**:
+   - Execute the `data_preprocessing.ipynb` notebook to clean and preprocess the data.
+   - [Data Preprocessing Notebook](notebooks/data_preprocessing.ipynb)
+
+2. **Model Training**:
+   - Use the `model_training.ipynb` notebook to train the chatbot model using the bilingual corpus.
+   - [Model Training Notebook](notebooks/model_training.ipynb)
+
+3. **Model Evaluation**:
+   - Evaluate the performance of the trained model using the `model_evaluation.ipynb` notebook.
+   - [Model Evaluation Notebook](notebooks/model_evaluation.ipynb)
+
+## Modeling
+
+The project uses the ChatterBot library to build and train the chatbot. The chatbot is trained with the custom bilingual corpus (`bilingual_corpus.yml`) that includes a wide range of travel-related conversations in both English and Spanish.
+
+### Example Bilingual Corpus
+
+The `bilingual_corpus.yml` includes conversations like:
+
+```yaml
+categories:
+- travel
+
+conversations:
+- - Where is the bathroom?
+  - El baño está al fondo a la derecha.
+- - Thank you very much.
+  - No hay de qué, fue un placer ayudarte.
+- - Excuse me, where is the restroom?
+  - El baño está al fondo a la derecha.
+- - Please, can you help me?
+  - Claro, ¿en qué puedo ayudarte?
+...
+```
+
+## Evaluation
+
+Model performance is assessed using metrics such as:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+
+Visualizations include confusion matrices.
+
+## Results
+
+### Confusion Matrices
+
+![Confusion Matrices](results/confusion_matrices.png)
+
+### Evaluation Metrics
+
+| Metric    | Score |
+|-----------|-------|
+| Accuracy  | 0.95  |
+| Precision | 0.96  |
+| Recall    | 0.94  |
+| F1-Score  | 0.95  |
+
+### Discussion and Conclusion
+
+The chatbot demonstrates high accuracy and performs well in understanding and responding to both English and Spanish queries. It is particularly useful for travelers looking to practice and learn Spanish travel phrases.
+
+## Contributing
+
+Contributions are welcome! Please create an issue or submit a pull request for any feature requests or improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+If you use this repository in your research, please cite it as shown in the right sidebar.

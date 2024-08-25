@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                background-image: url('background.png');
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #chat-container {
+                width: 600px; /* Adjust width as needed */
+                text-align: center;
+            }
+            #welcome-message {
+                font-size: 30px;
+                color: black;
+                margin-bottom: 10px;
+            }
+            #disclaimer {
+                font-size: 14px; /* Small font size for the disclaimer */
+                color: red;
+                margin-top: 10px;
+            }
+            .github-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 15px;
+                margin-top: 20px;
+                background-color: #333;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            .github-button:hover {
+                background-color: #555;
+            }
+            .github-button img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="chat-container">
+            <div id="welcome-message">Hello, welcome to the health assistant chatbot! How can I assist you today?</div>
+            <div 
+                id="rasa-chat-widget" 
+                data-websocket-url="http://localhost:5005"
+                data-height="475">
+            </div>
+            <div id="disclaimer">
+                Please note: This chatbot is for demonstration purposes only. It is not a substitute for professional medical advice or treatment. Always consult a healthcare professional for medical concerns.
+            </div>
+            <!-- GitHub Button -->
+            <a href="https://github.com/CarlosADuranVillalobos" target="_blank" class="github-button">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                Carlos A. Duran Villalobos
+            </a>
+        </div>
+        <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+    </body>
+</html>

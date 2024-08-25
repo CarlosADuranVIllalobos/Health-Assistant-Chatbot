@@ -1,0 +1,74 @@
+{
+  "ask_doctor": {
+    "precision": 0.9333333333333333,
+    "recall": 1.0,
+    "f1-score": 0.9655172413793104,
+    "support": 14,
+    "confused_with": {}
+  },
+  "ask_symptoms": {
+    "precision": 0.937007874015748,
+    "recall": 1.0,
+    "f1-score": 0.9674796747967479,
+    "support": 119,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 18,
+    "confused_with": {
+      "ask_symptoms": 3,
+      "greet": 2
+    }
+  },
+  "greet": {
+    "precision": 0.8571428571428571,
+    "recall": 0.9,
+    "f1-score": 0.8780487804878048,
+    "support": 20,
+    "confused_with": {
+      "check_health_info": 2
+    }
+  },
+  "check_health_info": {
+    "precision": 0.9130434782608695,
+    "recall": 0.9545454545454546,
+    "f1-score": 0.9333333333333332,
+    "support": 88,
+    "confused_with": {
+      "ask_advice": 3,
+      "ask_symptoms": 1
+    }
+  },
+  "ask_advice": {
+    "precision": 0.3333333333333333,
+    "recall": 0.14285714285714285,
+    "f1-score": 0.2,
+    "support": 14,
+    "confused_with": {
+      "check_health_info": 6,
+      "ask_symptoms": 4
+    }
+  },
+  "accuracy": 0.9120879120879121,
+  "macro avg": {
+    "precision": 0.8289768126810234,
+    "recall": 0.7773448773448774,
+    "f1-score": 0.7907298383328661,
+    "support": 273
+  },
+  "weighted avg": {
+    "precision": 0.8964393903700403,
+    "recall": 0.9120879120879121,
+    "f1-score": 0.8994198960557245,
+    "support": 273
+  },
+  "micro avg": {
+    "precision": 0.9120879120879121,
+    "recall": 0.9120879120879121,
+    "f1-score": 0.9120879120879121,
+    "support": 273
+  }
+}

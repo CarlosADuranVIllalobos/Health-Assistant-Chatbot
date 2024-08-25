@@ -1,0 +1,194 @@
+[
+  {
+    "text": "What's the best treatment for insomnia?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can you recommend something for allergies?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "Until next time.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_advice",
+      "confidence": 0.9227879047393799
+    }
+  },
+  {
+    "text": "Have a good one.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.9997488856315613
+    }
+  },
+  {
+    "text": "I’m off.",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.9987956285476685
+    }
+  },
+  {
+    "text": "What are good natural remedies for migraines?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "How to lower high blood pressure?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8789216876029968
+    }
+  },
+  {
+    "text": "How to deal with allergy?",
+    "intent": "check_health_info",
+    "intent_prediction": {
+      "name": "ask_advice",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "Best skincare for acne",
+    "intent": "check_health_info",
+    "intent_prediction": {
+      "name": "ask_advice",
+      "confidence": 0.9726232290267944
+    }
+  },
+  {
+    "text": "Farewell!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.999083399772644
+    }
+  },
+  {
+    "text": "How to deal with stress?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.9999992847442627
+    }
+  },
+  {
+    "text": "Tips for improving sleep?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.7399522066116333
+    }
+  },
+  {
+    "text": "Any advice for dealing with colds?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Are there natural remedies for psoriasis?",
+    "intent": "check_health_info",
+    "intent_prediction": {
+      "name": "ask_advice",
+      "confidence": 0.9903506636619568
+    }
+  },
+  {
+    "text": "Have a great day!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6877084374427795
+    }
+  },
+  {
+    "text": "Any suggestions for a sore throat?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "How can I reduce anxiety?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.9890778660774231
+    }
+  },
+  {
+    "text": "What should I eat for better digestion?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.9971912503242493
+    }
+  },
+  {
+    "text": "Symptoms and treatment of dengue",
+    "intent": "check_health_info",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.7841981053352356
+    }
+  },
+  {
+    "text": "What's up?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.6896610260009766
+    }
+  },
+  {
+    "text": "Pleased to meet you.",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "check_health_info",
+      "confidence": 0.6797338724136353
+    }
+  },
+  {
+    "text": "See you soon!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9724193811416626
+    }
+  },
+  {
+    "text": "How do I relieve back pain?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_symptoms",
+      "confidence": 0.9999706745147705
+    }
+  },
+  {
+    "text": "What should I do if I feel tired all the time?",
+    "intent": "ask_advice",
+    "intent_prediction": {
+      "name": "ask_doctor",
+      "confidence": 0.9613511562347412
+    }
+  }
+]

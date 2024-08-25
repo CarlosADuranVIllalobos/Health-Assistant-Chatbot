@@ -1,0 +1,3760 @@
+[
+  {
+    "text": "I feel weak and have had multiple fainting spells.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "weak",
+        "entity": "symptom"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "value": "fainting",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 25,
+        "end": 33,
+        "confidence_entity": 0.5677138566970825,
+        "value": "multiple",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.6591531038284302,
+        "value": "fainting",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 43,
+        "end": 49,
+        "confidence_entity": 0.5807236433029175,
+        "value": "spells",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I feel muscle pain, joint pain, and weakness throughout my body.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "value": "muscle pain",
+        "entity": "symptom"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "value": "joint pain",
+        "entity": "symptom"
+      },
+      {
+        "start": 36,
+        "end": 44,
+        "value": "weakness",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 18,
+        "confidence_entity": 0.9999347925186157,
+        "value": "muscle pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 20,
+        "end": 30,
+        "confidence_entity": 0.9999828338623047,
+        "value": "joint pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9740267992019653,
+        "value": "weakness",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 59,
+        "end": 63,
+        "confidence_entity": 0.9838860034942627,
+        "value": "body",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm experiencing irregular sugar levels, cough, and high fever.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 39,
+        "value": "irregular sugar levels",
+        "entity": "symptom"
+      },
+      {
+        "start": 41,
+        "end": 46,
+        "value": "cough",
+        "entity": "symptom"
+      },
+      {
+        "start": 52,
+        "end": 62,
+        "value": "high fever",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 26,
+        "confidence_entity": 0.9030126929283142,
+        "value": "irregular",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 33,
+        "end": 39,
+        "confidence_entity": 0.993117094039917,
+        "value": "levels",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.7583678364753723,
+        "value": "cough",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 52,
+        "end": 62,
+        "confidence_entity": 0.9998652935028076,
+        "value": "high fever",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I am suffering from abnormal menstruation, dischromic patches, and watering from eyes.",
+    "entities": [
+      {
+        "start": 20,
+        "end": 41,
+        "value": "abnormal menstruation",
+        "entity": "symptom"
+      },
+      {
+        "start": 43,
+        "end": 61,
+        "value": "dischromic patches",
+        "entity": "symptom"
+      },
+      {
+        "start": 67,
+        "end": 85,
+        "value": "watering from eyes",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 20,
+        "end": 41,
+        "confidence_entity": 0.5055893063545227,
+        "value": "abnormal menstruation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 43,
+        "end": 53,
+        "confidence_entity": 0.8513951301574707,
+        "value": "dischromic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 54,
+        "end": 61,
+        "confidence_entity": 0.9999309778213501,
+        "value": "patches",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 67,
+        "end": 75,
+        "confidence_entity": 0.9206343293190002,
+        "value": "watering",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 81,
+        "end": 85,
+        "confidence_entity": 0.9996576309204102,
+        "value": "eyes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have increased appetite, polyuria, and family history.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 25,
+        "value": "increased appetite",
+        "entity": "symptom"
+      },
+      {
+        "start": 27,
+        "end": 35,
+        "value": "polyuria",
+        "entity": "symptom"
+      },
+      {
+        "start": 41,
+        "end": 55,
+        "value": "family history",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 25,
+        "confidence_entity": 0.9997084736824036,
+        "value": "appetite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9182419180870056,
+        "value": "polyuria",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 41,
+        "end": 47,
+        "confidence_entity": 0.9995133876800537,
+        "value": "family",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 48,
+        "end": 55,
+        "confidence_entity": 0.9786739945411682,
+        "value": "history",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What's the best treatment for insomnia?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 38,
+        "value": "insomnia",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you recommend something for allergies?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 41,
+        "value": "allergies",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 32,
+        "end": 41,
+        "confidence_entity": 0.9810348153114319,
+        "value": "allergies",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Explain what peptic ulcer disease is",
+    "entities": [
+      {
+        "start": 13,
+        "end": 33,
+        "value": "peptic ulcer disease",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.84427410364151,
+        "value": "peptic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.9904099702835083,
+        "value": "ulcer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.7453523278236389,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What are the risks of malaria?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "malaria",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.648176372051239,
+        "value": "malaria",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What is leukemia?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 16,
+        "value": "leukemia",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How is breast cancer detected?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 20,
+        "value": "breast cancer",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 20,
+        "confidence_entity": 0.7647064924240112,
+        "value": "breast cancer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Learn about prostate cancer",
+    "entities": [
+      {
+        "start": 12,
+        "end": 27,
+        "value": "prostate cancer",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9996927976608276,
+        "value": "cancer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What skin care routines are recommended for someone with psoriasis?",
+    "entities": [
+      {
+        "start": 57,
+        "end": 66,
+        "value": "psoriasis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.8237445950508118,
+        "value": "routines",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 39,
+        "confidence_entity": 0.558599591255188,
+        "value": "recommended",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 57,
+        "end": 66,
+        "confidence_entity": 0.999359667301178,
+        "value": "psoriasis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Are there vaccines for COVID-19?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "COVID-19",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.8424742817878723,
+        "value": "vaccines",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9999080896377563,
+        "value": "coronavirus",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Until next time.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9872560501098633,
+        "value": "time",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Have a good one.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.7156521677970886,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sneezing has been constant, along with watery eyes.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Sneezing",
+        "entity": "symptom"
+      },
+      {
+        "start": 39,
+        "end": 50,
+        "value": "watery eyes",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9991574287414551,
+        "value": "sneezing",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.9171112775802612,
+        "value": "along",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 39,
+        "end": 50,
+        "confidence_entity": 0.9999806880950928,
+        "value": "watery eyes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have continuous sneezing, shivering, and chills.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 26,
+        "value": "continuous sneezing",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 37,
+        "value": "shivering",
+        "entity": "symptom"
+      },
+      {
+        "start": 43,
+        "end": 49,
+        "value": "chills",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9986416697502136,
+        "value": "continuous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.9999817609786987,
+        "value": "sneezing",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 43,
+        "end": 49,
+        "confidence_entity": 0.999883770942688,
+        "value": "shivering",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I've noticed ulcers on my tongue, muscle wasting, and vomiting.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 32,
+        "value": "ulcers on my tongue",
+        "entity": "symptom"
+      },
+      {
+        "start": 34,
+        "end": 48,
+        "value": "muscle wasting",
+        "entity": "symptom"
+      },
+      {
+        "start": 54,
+        "end": 62,
+        "value": "vomiting",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.9994243383407593,
+        "value": "ulcers",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.9664928317070007,
+        "value": "tongue",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 34,
+        "end": 40,
+        "confidence_entity": 0.9920699000358582,
+        "value": "muscle",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 41,
+        "end": 48,
+        "confidence_entity": 0.9990082383155823,
+        "value": "wasting",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 54,
+        "end": 62,
+        "confidence_entity": 0.9999397993087769,
+        "value": "vomiting",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My issues include excessive hunger, extra marital contacts, and drying and tingling lips.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 34,
+        "value": "excessive hunger",
+        "entity": "symptom"
+      },
+      {
+        "start": 36,
+        "end": 58,
+        "value": "extra marital contacts",
+        "entity": "symptom"
+      },
+      {
+        "start": 64,
+        "end": 88,
+        "value": "drying and tingling lips",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9999545812606812,
+        "value": "excessive",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 36,
+        "end": 49,
+        "confidence_entity": 0.9567143321037292,
+        "value": "extra marital",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 75,
+        "end": 88,
+        "confidence_entity": 0.6549074053764343,
+        "value": "tingling lips",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm dealing with passage of gases, internal itching, and toxic look.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 33,
+        "value": "passage of gases",
+        "entity": "symptom"
+      },
+      {
+        "start": 35,
+        "end": 51,
+        "value": "internal itching",
+        "entity": "symptom"
+      },
+      {
+        "start": 57,
+        "end": 67,
+        "value": "toxic look",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.9989803433418274,
+        "value": "gases",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 44,
+        "end": 51,
+        "confidence_entity": 0.9999133348464966,
+        "value": "itching",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 57,
+        "end": 67,
+        "confidence_entity": 0.6315308809280396,
+        "value": "toxic look (typhos)",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I experience visual disturbances, receiving blood transfusion, and receiving unsterile injections.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 32,
+        "value": "visual disturbances",
+        "entity": "symptom"
+      },
+      {
+        "start": 34,
+        "end": 61,
+        "value": "receiving blood transfusion",
+        "entity": "symptom"
+      },
+      {
+        "start": 67,
+        "end": 97,
+        "value": "receiving unsterile injections",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 13,
+        "end": 32,
+        "confidence_entity": 0.9886493682861328,
+        "value": "visual disturbances",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 44,
+        "end": 61,
+        "confidence_entity": 0.9632340669631958,
+        "value": "receiving blood transfusion",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 77,
+        "end": 97,
+        "confidence_entity": 0.6528797745704651,
+        "value": "unsterile injections",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm dealing with coma, stomach bleeding, and distention of abdomen.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "coma",
+        "entity": "symptom"
+      },
+      {
+        "start": 23,
+        "end": 39,
+        "value": "stomach bleeding",
+        "entity": "symptom"
+      },
+      {
+        "start": 45,
+        "end": 66,
+        "value": "distention of abdomen",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.5878204107284546,
+        "value": "coma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.6129908561706543,
+        "value": "stomach",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 45,
+        "end": 58,
+        "confidence_entity": 0.7993575930595398,
+        "value": "distention of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 59,
+        "end": 66,
+        "confidence_entity": 0.9825187921524048,
+        "value": "abdomen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I am experiencing pus filled pimples, blackheads, and scurring.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 36,
+        "value": "pus filled pimples",
+        "entity": "symptom"
+      },
+      {
+        "start": 38,
+        "end": 48,
+        "value": "blackheads",
+        "entity": "symptom"
+      },
+      {
+        "start": 54,
+        "end": 62,
+        "value": "scurring",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.5378918647766113,
+        "value": "pus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9998970031738281,
+        "value": "filled",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 38,
+        "end": 48,
+        "confidence_entity": 0.716152548789978,
+        "value": "blackheads",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 54,
+        "end": 62,
+        "confidence_entity": 0.6506668329238892,
+        "value": "scurring",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I suffer from skin peeling, silver like dusting, and small dents in nails.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 26,
+        "value": "skin peeling",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 47,
+        "value": "silver like dusting",
+        "entity": "symptom"
+      },
+      {
+        "start": 53,
+        "end": 73,
+        "value": "small dents in nails",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.9970898628234863,
+        "value": "skin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.8065441250801086,
+        "value": "silver",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 40,
+        "end": 47,
+        "confidence_entity": 0.9890669584274292,
+        "value": "dusting",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 53,
+        "end": 58,
+        "confidence_entity": 0.9939397573471069,
+        "value": "small",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 65,
+        "end": 73,
+        "confidence_entity": 0.9999457597732544,
+        "value": "in nails",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What are good natural remedies for migraines?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 44,
+        "value": "migraines",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 35,
+        "end": 44,
+        "confidence_entity": 0.99967360496521,
+        "value": "migraines",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do I need a doctor's appointment for chest pain?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 47,
+        "value": "chest pain",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 19,
+        "end": 20,
+        "confidence_entity": 0.6226285696029663,
+        "value": "s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 37,
+        "end": 47,
+        "confidence_entity": 0.7329567670822144,
+        "value": "chest pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How to deal with allergy?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "allergy",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9998251795768738,
+        "value": "allergy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Treatment options for AIDS",
+    "entities": [
+      {
+        "start": 22,
+        "end": 26,
+        "value": "AIDS",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is gastroenteritis?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 23,
+        "value": "gastroenteritis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 8,
+        "end": 23,
+        "confidence_entity": 0.48747482895851135,
+        "value": "gastroenteritis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Control measures for bronchial asthma",
+    "entities": [
+      {
+        "start": 21,
+        "end": 37,
+        "value": "bronchial asthma",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.9690894484519958,
+        "value": "bronchial",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How is paralysis due to brain hemorrhage treated?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 40,
+        "value": "paralysis due to brain hemorrhage",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.9449514150619507,
+        "value": "brain",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Why does jaundice occur?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "jaundice",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Preventative measures for hepatitis A",
+    "entities": [
+      {
+        "start": 26,
+        "end": 37,
+        "value": "hepatitis A",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 26,
+        "end": 35,
+        "confidence_entity": 0.9928587675094604,
+        "value": "hepatitis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Managing osteoarthritis pain",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "osteoarthritis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 9,
+        "end": 28,
+        "confidence_entity": 0.9523738622665405,
+        "value": "osteoarthritis pain",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Best skincare for acne",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "acne",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.5897406935691833,
+        "value": "acne",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What triggers psoriasis flare-ups?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 23,
+        "value": "psoriasis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.9999634027481079,
+        "value": "psoriasis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "illness",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.9886088371276855,
+        "value": "flare-ups",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Farewell!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.3867449164390564,
+        "value": "Farewell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "There are sores on my lips, ulcers in my mouth, and swollen gums.",
+    "entities": [
+      {
+        "start": 10,
+        "end": 15,
+        "value": "sores",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "value": "ulcers",
+        "entity": "symptom"
+      },
+      {
+        "start": 52,
+        "end": 64,
+        "value": "swollen gums",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9136443138122559,
+        "value": "sores on",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9996809959411621,
+        "value": "lips",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 37,
+        "confidence_entity": 0.8425556421279907,
+        "value": "ulcers in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 52,
+        "end": 64,
+        "confidence_entity": 0.9941152334213257,
+        "value": "swollen gums",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "There is pain in my lower back, cramps in my legs, and stiffness in my joints.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "pain",
+        "entity": "symptom"
+      },
+      {
+        "start": 32,
+        "end": 38,
+        "value": "cramps",
+        "entity": "symptom"
+      },
+      {
+        "start": 55,
+        "end": 64,
+        "value": "stiffness",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 19,
+        "confidence_entity": 0.66646409034729,
+        "value": "pain in my",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 30,
+        "confidence_entity": 0.999995231628418,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 32,
+        "end": 49,
+        "confidence_entity": 0.5442018508911133,
+        "value": "cramps in my legs",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 55,
+        "end": 77,
+        "confidence_entity": 0.9965118765830994,
+        "value": "stiffness in my joints",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've been feeling anxiety, cold hands and feet, and mood swings.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "anxiety",
+        "entity": "symptom"
+      },
+      {
+        "start": 27,
+        "end": 46,
+        "value": "cold hands and feet",
+        "entity": "symptom"
+      },
+      {
+        "start": 52,
+        "end": 63,
+        "value": "mood swings",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9999474287033081,
+        "value": "anxiety",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.9999339580535889,
+        "value": "common cold",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 52,
+        "end": 63,
+        "confidence_entity": 0.9757885336875916,
+        "value": "mood swings",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I have history of alcohol consumption, fluid overload, and blood in sputum.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 37,
+        "value": "history of alcohol consumption",
+        "entity": "symptom"
+      },
+      {
+        "start": 39,
+        "end": 53,
+        "value": "fluid overload",
+        "entity": "symptom"
+      },
+      {
+        "start": 59,
+        "end": 74,
+        "value": "blood in sputum",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9879763722419739,
+        "value": "history of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 18,
+        "end": 37,
+        "confidence_entity": 0.64,
+        "value": "alcohol consumption",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 39,
+        "end": 53,
+        "confidence_entity": 0.9999725818634033,
+        "value": "fluid overload",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 59,
+        "end": 74,
+        "confidence_entity": 0.9999406337738037,
+        "value": "blood in sputum",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My throat is sore and I feel chills.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 9,
+        "value": "throat",
+        "entity": "symptom"
+      },
+      {
+        "start": 29,
+        "end": 35,
+        "value": "chills",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.9940475225448608,
+        "value": "throat",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9999639987945557,
+        "value": "sore",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 29,
+        "end": 35,
+        "confidence_entity": 0.9999715089797974,
+        "value": "shivering",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I've been feeling very dizzy lately.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 28,
+        "value": "dizzy",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9999001026153564,
+        "value": "very",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 23,
+        "end": 28,
+        "confidence_entity": 0.9999836683273315,
+        "value": "dizzy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "There's a constant ache in my back.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "ache",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.9999656677246094,
+        "value": "ache",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.5693915486335754,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tips for improving sleep?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 24,
+        "value": "sleep",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is this serious enough to see a doctor?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.7541379928588867,
+        "value": "enough",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "At what point should I consider seeing a physician?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9746073484420776,
+        "value": "consider",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What do I need to know about heart attack?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 41,
+        "value": "heart attack",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 29,
+        "end": 41,
+        "confidence_entity": 0.5807562470436096,
+        "value": "heart attack",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Give details about GERD",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "GERD",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What does cervical spondylosis affect?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 30,
+        "value": "cervical spondylosis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.771153450012207,
+        "value": "spondylosis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Common cold relief for common cold",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "common cold",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.4613327980041504,
+        "value": "common cold",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.9978241920471191,
+        "value": "common cold",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Treatments available for lymphoma",
+    "entities": [
+      {
+        "start": 25,
+        "end": 33,
+        "value": "lymphoma",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 11,
+        "end": 20,
+        "confidence_entity": 0.5709952116012573,
+        "value": "available",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 25,
+        "end": 33,
+        "confidence_entity": 0.802506148815155,
+        "value": "lymphoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Give me details about the flu and its treatment.",
+    "entities": [
+      {
+        "start": 26,
+        "end": 29,
+        "value": "flu",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.7952311038970947,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 26,
+        "end": 29,
+        "confidence_entity": 0.999624490737915,
+        "value": "flu",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I have tingling in my hands and a loss of smell.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 15,
+        "value": "tingling",
+        "entity": "symptom"
+      },
+      {
+        "start": 34,
+        "end": 47,
+        "value": "loss of smell",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 7,
+        "end": 18,
+        "confidence_entity": 0.9968574047088623,
+        "value": "tingling in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.9985295534133911,
+        "value": "hands",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 34,
+        "end": 47,
+        "confidence_entity": 0.9948875308036804,
+        "value": "loss of smell",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Symptoms present are itchy eyes, skin rash, and swelling around my ankles.",
+    "entities": [
+      {
+        "start": 21,
+        "end": 31,
+        "value": "itchy eyes",
+        "entity": "symptom"
+      },
+      {
+        "start": 33,
+        "end": 42,
+        "value": "skin rash",
+        "entity": "symptom"
+      },
+      {
+        "start": 48,
+        "end": 56,
+        "value": "swelling",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 31,
+        "confidence_entity": 0.9917536973953247,
+        "value": "present are itchy eyes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 33,
+        "end": 42,
+        "confidence_entity": 0.9986075758934021,
+        "value": "skin rash",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 48,
+        "end": 73,
+        "confidence_entity": 0.8993179202079773,
+        "value": "swelling around my ankles",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've felt nausea, heartburn, and acid reflux after eating.",
+    "entities": [
+      {
+        "start": 10,
+        "end": 16,
+        "value": "nausea",
+        "entity": "symptom"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "value": "heartburn",
+        "entity": "symptom"
+      },
+      {
+        "start": 33,
+        "end": 44,
+        "value": "acid reflux",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9999614953994751,
+        "value": "nausea",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.858940064907074,
+        "value": "acidity",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 33,
+        "end": 37,
+        "confidence_entity": 0.55362468957901,
+        "value": "acid",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 38,
+        "end": 44,
+        "confidence_entity": 0.9978898167610168,
+        "value": "reflux",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 51,
+        "end": 57,
+        "confidence_entity": 0.9880942702293396,
+        "value": "eating",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I keep having cold flashes, hot flashes, and extreme fatigue.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 26,
+        "value": "cold flashes",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 39,
+        "value": "hot flashes",
+        "entity": "symptom"
+      },
+      {
+        "start": 45,
+        "end": 60,
+        "value": "extreme fatigue",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 2,
+        "end": 6,
+        "confidence_entity": 0.9884185194969177,
+        "value": "keep",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 14,
+        "end": 26,
+        "confidence_entity": 0.8667345643043518,
+        "value": "cold flashes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 39,
+        "confidence_entity": 0.5764611959457397,
+        "value": "hot flashes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 45,
+        "end": 52,
+        "confidence_entity": 0.671596884727478,
+        "value": "extreme",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 53,
+        "end": 60,
+        "confidence_entity": 0.9930239915847778,
+        "value": "fatigue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I suffer from burning micturition, spotting during urination, and fatigue.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 33,
+        "value": "burning micturition",
+        "entity": "symptom"
+      },
+      {
+        "start": 35,
+        "end": 60,
+        "value": "spotting during urination",
+        "entity": "symptom"
+      },
+      {
+        "start": 66,
+        "end": 73,
+        "value": "fatigue",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.967552900314331,
+        "value": "micturition",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 35,
+        "end": 60,
+        "confidence_entity": 0.893742561340332,
+        "value": "spotting urination",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 66,
+        "end": 73,
+        "confidence_entity": 0.9999755620956421,
+        "value": "fatigue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My issues include weight loss, lethargy, and patches in my throat.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "weight loss",
+        "entity": "symptom"
+      },
+      {
+        "start": 31,
+        "end": 39,
+        "value": "lethargy",
+        "entity": "symptom"
+      },
+      {
+        "start": 45,
+        "end": 65,
+        "value": "patches in my throat",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 24,
+        "confidence_entity": 0.9999899864196777,
+        "value": "weight",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.9999887943267822,
+        "value": "loss",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.9767476916313171,
+        "value": "lethargy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 45,
+        "end": 55,
+        "confidence_entity": 0.9976129531860352,
+        "value": "patches in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 59,
+        "end": 65,
+        "confidence_entity": 0.999994158744812,
+        "value": "throat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I've noticed some itching on my skin.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "itching",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 28,
+        "confidence_entity": 0.9137392640113831,
+        "value": "itching on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Any suggestions for a sore throat?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 33,
+        "value": "sore throat",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 4,
+        "end": 15,
+        "confidence_entity": 0.9786025881767273,
+        "value": "suggestions",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.9999057054519653,
+        "value": "throat irritation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What should I eat for better digestion?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 38,
+        "value": "digestion",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.3560318350791931,
+        "value": "better",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 29,
+        "end": 38,
+        "confidence_entity": 0.9997479319572449,
+        "value": "digestion",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is it time to visit a healthcare professional?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 33,
+        "end": 45,
+        "confidence_entity": 0.9710964560508728,
+        "value": "professional",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Who is the right specialist to consult for my condition?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 46,
+        "end": 55,
+        "confidence_entity": 0.9936140179634094,
+        "value": "condition",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How to cure chickenpox?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 22,
+        "value": "chickenpox",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.9754635691642761,
+        "value": "chickenpox",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Symptoms and treatment of dengue",
+    "entities": [
+      {
+        "start": 26,
+        "end": 32,
+        "value": "dengue",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 23,
+        "end": 25,
+        "confidence_entity": 0.9955846667289734,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.4581484794616699,
+        "value": "dengue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Discuss hepatitis D risks",
+    "entities": [
+      {
+        "start": 8,
+        "end": 19,
+        "value": "hepatitis D",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.9954866766929626,
+        "value": "hepatitis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What leads to pneumonia?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 23,
+        "value": "pneumonia",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to treat varicose veins?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 27,
+        "value": "varicose veins",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.6773181557655334,
+        "value": "varicose veins",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How to reduce arthritis inflammation?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 23,
+        "value": "arthritis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 14,
+        "end": 23,
+        "confidence_entity": 0.9996412992477417,
+        "value": "arthritis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 24,
+        "end": 36,
+        "confidence_entity": 0.6877785325050354,
+        "value": "inflammation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Treatment for vertigo",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "vertigo",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the progression of ovarian cancer",
+    "entities": [
+      {
+        "start": 27,
+        "end": 41,
+        "value": "ovarian cancer",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 23,
+        "confidence_entity": 0.9747358560562134,
+        "value": "progression",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 35,
+        "end": 41,
+        "confidence_entity": 0.9996442794799805,
+        "value": "cancer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is hypoglycemia related to diabetes?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 15,
+        "value": "hypoglycemia",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 3,
+        "end": 15,
+        "confidence_entity": 0.9997991919517517,
+        "value": "hypoglycemia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "illness",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9998854398727417,
+        "value": "diabetes",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can tuberculosis be completely cured?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "tuberculosis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 4,
+        "end": 16,
+        "confidence_entity": 0.9998471736907959,
+        "value": "tuberculosis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 31,
+        "end": 36,
+        "confidence_entity": 0.5515908598899841,
+        "value": "cured",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have a sore throat and my nose is running.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "sore throat",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "value": "nose",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 20,
+        "confidence_entity": 0.9922518134117126,
+        "value": "throat irritation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9998705387115479,
+        "value": "nose",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.9751964807510376,
+        "value": "running",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "There's been a persistent cough and some phlegm.",
+    "entities": [
+      {
+        "start": 26,
+        "end": 31,
+        "value": "cough",
+        "entity": "symptom"
+      },
+      {
+        "start": 41,
+        "end": 47,
+        "value": "phlegm",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.9991064667701721,
+        "value": "persistent",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 31,
+        "confidence_entity": 0.9999572038650513,
+        "value": "cough",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 41,
+        "end": 47,
+        "confidence_entity": 0.9999624490737915,
+        "value": "phlegm",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My eyes are itchy and I have skin rashes.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 17,
+        "value": "eyes are itchy",
+        "entity": "symptom"
+      },
+      {
+        "start": 29,
+        "end": 40,
+        "value": "skin rashes",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9999562501907349,
+        "value": "itchy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 29,
+        "end": 40,
+        "confidence_entity": 0.9822201728820801,
+        "value": "skin rashes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have had persistent abdominal pain, vomiting, and diarrhea since yesterday.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": "abdominal pain",
+        "entity": "symptom"
+      },
+      {
+        "start": 38,
+        "end": 46,
+        "value": "vomiting",
+        "entity": "symptom"
+      },
+      {
+        "start": 52,
+        "end": 60,
+        "value": "diarrhea",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 11,
+        "end": 21,
+        "confidence_entity": 0.9998461008071899,
+        "value": "persistent",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 22,
+        "end": 36,
+        "confidence_entity": 0.9995296001434326,
+        "value": "stomach pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 38,
+        "end": 46,
+        "confidence_entity": 0.999981164932251,
+        "value": "vomiting",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 52,
+        "end": 60,
+        "confidence_entity": 0.9999641180038452,
+        "value": "diarrhoea",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 67,
+        "end": 76,
+        "confidence_entity": 0.7599350214004517,
+        "value": "yesterday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I am noticing tingling in my fingers, numbness in my toes, and muscle cramps.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 22,
+        "value": "tingling",
+        "entity": "symptom"
+      },
+      {
+        "start": 38,
+        "end": 46,
+        "value": "numbness",
+        "entity": "symptom"
+      },
+      {
+        "start": 63,
+        "end": 76,
+        "value": "muscle cramps",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 14,
+        "end": 25,
+        "confidence_entity": 0.8719226121902466,
+        "value": "tingling in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9315956234931946,
+        "value": "fingers",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 38,
+        "end": 46,
+        "confidence_entity": 0.9995456337928772,
+        "value": "numbness",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 53,
+        "end": 57,
+        "confidence_entity": 0.4466337561607361,
+        "value": "toes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 63,
+        "end": 76,
+        "confidence_entity": 0.9889560341835022,
+        "value": "cramps",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Symptoms include persistent cough, phlegm production, and a feeling of tightness in the chest.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 33,
+        "value": "persistent cough",
+        "entity": "symptom"
+      },
+      {
+        "start": 35,
+        "end": 52,
+        "value": "phlegm production",
+        "entity": "symptom"
+      },
+      {
+        "start": 71,
+        "end": 93,
+        "value": "tightness in the chest",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 27,
+        "confidence_entity": 0.9998366832733154,
+        "value": "persistent",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.9999427795410156,
+        "value": "cough",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 35,
+        "end": 52,
+        "confidence_entity": 0.9486963152885437,
+        "value": "phlegm production",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 68,
+        "end": 87,
+        "confidence_entity": 0.995236337184906,
+        "value": "of tightness in the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 88,
+        "end": 93,
+        "confidence_entity": 0.9998181462287903,
+        "value": "chest",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've had stomach cramps, bloating, and gas for a few days now.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "stomach cramps",
+        "entity": "symptom"
+      },
+      {
+        "start": 25,
+        "end": 33,
+        "value": "bloating",
+        "entity": "symptom"
+      },
+      {
+        "start": 39,
+        "end": 42,
+        "value": "gas",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9990054965019226,
+        "value": "stomach",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 17,
+        "end": 23,
+        "confidence_entity": 0.7027397751808167,
+        "value": "cramps",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 25,
+        "end": 33,
+        "confidence_entity": 0.9565679430961609,
+        "value": "bloating",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 39,
+        "end": 42,
+        "confidence_entity": 0.9165710806846619,
+        "value": "gas",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 49,
+        "end": 57,
+        "confidence_entity": 0.5720084309577942,
+        "value": "few days",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "My symptoms include loss of appetite, pain behind the eyes, and back pain.",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "loss of appetite",
+        "entity": "symptom"
+      },
+      {
+        "start": 38,
+        "end": 58,
+        "value": "pain behind the eyes",
+        "entity": "symptom"
+      },
+      {
+        "start": 64,
+        "end": 73,
+        "value": "back pain",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 20,
+        "end": 36,
+        "confidence_entity": 0.999625563621521,
+        "value": "loss of appetite",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 38,
+        "end": 42,
+        "confidence_entity": 0.9858552813529968,
+        "value": "pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 50,
+        "end": 58,
+        "confidence_entity": 0.9955262541770935,
+        "value": "the eyes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 64,
+        "end": 73,
+        "confidence_entity": 0.9865998029708862,
+        "value": "back pain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I notice swelled lymph nodes, malaise, and blurred and distorted vision.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 28,
+        "value": "swelled lymph nodes",
+        "entity": "symptom"
+      },
+      {
+        "start": 30,
+        "end": 37,
+        "value": "malaise",
+        "entity": "symptom"
+      },
+      {
+        "start": 43,
+        "end": 71,
+        "value": "blurred and distorted vision",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.9814581274986267,
+        "value": "swelled",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.7060109972953796,
+        "value": "lymph nodes",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.6903507709503174,
+        "value": "malaise",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.9976162910461426,
+        "value": "blurred",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 55,
+        "end": 64,
+        "confidence_entity": 0.7063325643539429,
+        "value": "distorted",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have symptoms like swollen legs, swollen blood vessels, and puffy face and eyes.",
+    "entities": [
+      {
+        "start": 21,
+        "end": 33,
+        "value": "swollen legs",
+        "entity": "symptom"
+      },
+      {
+        "start": 35,
+        "end": 56,
+        "value": "swollen blood vessels",
+        "entity": "symptom"
+      },
+      {
+        "start": 62,
+        "end": 81,
+        "value": "puffy face and eyes",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.999919056892395,
+        "value": "swollen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 35,
+        "end": 42,
+        "confidence_entity": 0.9999371767044067,
+        "value": "swollen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 43,
+        "end": 56,
+        "confidence_entity": 0.5112365484237671,
+        "value": "blood vessels",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 68,
+        "end": 72,
+        "confidence_entity": 0.9799086451530457,
+        "value": "face",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 77,
+        "end": 81,
+        "confidence_entity": 0.9998255372047424,
+        "value": "eyes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "My symptoms are unsteadiness, weakness of one body side, and loss of smell.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "unsteadiness",
+        "entity": "symptom"
+      },
+      {
+        "start": 30,
+        "end": 55,
+        "value": "weakness of one body side",
+        "entity": "symptom"
+      },
+      {
+        "start": 61,
+        "end": 74,
+        "value": "loss of smell",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 16,
+        "end": 28,
+        "confidence_entity": 0.996285080909729,
+        "value": "unsteadiness",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.8662640452384949,
+        "value": "weakness of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 61,
+        "end": 74,
+        "confidence_entity": 0.9778998494148254,
+        "value": "loss of smell",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I have inflammatory nails, blister, and red sore around nose.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 25,
+        "value": "inflammatory nails",
+        "entity": "symptom"
+      },
+      {
+        "start": 27,
+        "end": 34,
+        "value": "blister",
+        "entity": "symptom"
+      },
+      {
+        "start": 40,
+        "end": 60,
+        "value": "red sore around nose",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.9999840259552002,
+        "value": "nails",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.9677649736404419,
+        "value": "blister",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.9999707937240601,
+        "value": "red",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.9996510744094849,
+        "value": "sore",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 56,
+        "end": 60,
+        "confidence_entity": 0.9999265670776367,
+        "value": "nose",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "There's a constant ache in my muscles.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "ache",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.5090222954750061,
+        "value": "ache in",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.8861832618713379,
+        "value": "muscles",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "My eyes are itchy.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 17,
+        "value": "eyes are itchy",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.53239506483078,
+        "value": "itchy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have a sore throat and my nose is running",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "sore throat",
+        "entity": "symptom"
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "value": "nose",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 9,
+        "end": 20,
+        "confidence_entity": 0.9922518134117126,
+        "value": "throat irritation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "symptom",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9998705387115479,
+        "value": "nose",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.9751964807510376,
+        "value": "running",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What remedies work for an upset stomach?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 39,
+        "value": "upset stomach",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.8399783968925476,
+        "value": "work",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 26,
+        "end": 39,
+        "confidence_entity": 0.9897432923316956,
+        "value": "indigestion",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What should I do if I feel tired all the time?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 45,
+        "value": "tired all the time",
+        "entity": "symptom"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.5155567526817322,
+        "value": "all",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "When is it necessary to get medical help?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 11,
+        "end": 20,
+        "confidence_entity": 0.9956865906715393,
+        "value": "necessary",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9800391793251038,
+        "value": "get",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Details about chronic cholestasis please",
+    "entities": [
+      {
+        "start": 14,
+        "end": 33,
+        "value": "chronic cholestasis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.7161835432052612,
+        "value": "chronic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 22,
+        "end": 40,
+        "confidence_entity": 0.7206001281738281,
+        "value": "cholestasis please",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Information on fungal infection",
+    "entities": [
+      {
+        "start": 15,
+        "end": 31,
+        "value": "fungal infection",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Symptoms of drug reaction",
+    "entities": [
+      {
+        "start": 12,
+        "end": 25,
+        "value": "drug reaction",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Long term effects of hepatitis B",
+    "entities": [
+      {
+        "start": 21,
+        "end": 32,
+        "value": "hepatitis B",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 18,
+        "end": 20,
+        "confidence_entity": 0.955946683883667,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.9984961748123169,
+        "value": "hepatitis b",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Effects of alcoholic hepatitis on the liver",
+    "entities": [
+      {
+        "start": 11,
+        "end": 30,
+        "value": "alcoholic hepatitis",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 21,
+        "end": 43,
+        "confidence_entity": 0.85,
+        "value": "hepatitis on the liver",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Symptoms of dimorphic hemorrhoids piles",
+    "entities": [
+      {
+        "start": 12,
+        "end": 39,
+        "value": "dimorphic hemorrhoids piles",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 12,
+        "end": 39,
+        "confidence_entity": 0.33191925287246704,
+        "value": "dimorphic hemorrhoids (piles)",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How to diagnose urinary tract infection?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 39,
+        "value": "urinary tract infection",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 16,
+        "end": 23,
+        "confidence_entity": 0.8951098322868347,
+        "value": "urinary",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "symptom",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.9608493447303772,
+        "value": "tract",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Managing symptoms of melanoma",
+    "entities": [
+      {
+        "start": 21,
+        "end": 29,
+        "value": "melanoma",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Early symptoms of lung cancer",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "lung cancer",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "illness",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9996786117553711,
+        "value": "cancer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What preventive measures can reduce the risk of tuberculosis?- Tell me about flu.",
+    "entities": [
+      {
+        "start": 48,
+        "end": 60,
+        "value": "tuberculosis",
+        "entity": "illness"
+      },
+      {
+        "start": 77,
+        "end": 80,
+        "value": "flu",
+        "entity": "illness"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "symptom",
+        "start": 45,
+        "end": 47,
+        "confidence_entity": 0.9870414733886719,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "illness",
+        "start": 48,
+        "end": 60,
+        "confidence_entity": 0.9998610019683838,
+        "value": "tuberculosis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "illness",
+        "start": 77,
+        "end": 80,
+        "confidence_entity": 0.999742329120636,
+        "value": "flu",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
