@@ -51,7 +51,7 @@ ensure_nltk_data()
 def get_text_from_gpt(user_text):
     """Generate text using GPT-Neo 2.7B model via Hugging Face API."""
     API_URL = "https://api-inference.huggingface.co/models/EleutherAI/gpt-neo-2.7B"
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": "Bearer <Your huggingface API>"} #Change <Your huggingface API> with your API or alternative run your own server using the function above
     
     # Prepare the request data with the parameters you previously used for the local model
     prompt_parameters = {
