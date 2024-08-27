@@ -1,6 +1,7 @@
-# Travel Spanish Chatbot
+# Health Assistant Chatbot
 
-This repository demonstrates how to build a customized AI chatbot to help users practice and learn useful Spanish for traveling. The chatbot is designed to handle conversations in both English and Spanish, making it an ideal tool for English speakers looking to improve their Spanish language skills.
+
+This repository demonstrates how to build a customized AI chatbot designed to provide basic medical advice. The chatbot is intended for demonstration purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment.
 
 ## Table of Contents
 
@@ -10,77 +11,93 @@ This repository demonstrates how to build a customized AI chatbot to help users 
 - [Modeling](#modeling)
 - [Evaluation](#evaluation)
 - [Results](#results)
+- [Disclaimer](#disclaimer)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Dataset
 
-The chatbot is trained using a custom bilingual corpus that includes conversations in both English and Spanish. This corpus helps the chatbot understand and respond in both languages, facilitating language learning.
+The chatbot is trained using a custom dataset that includes conversations related to common medical inquiries. The focus is on providing informative responses to general health-related questions.
 
 ### Citation of the Dataset
 
-The `bilingual_corpus.yml` file contains hand-crafted conversations specifically designed for this project. If you use this repository, please cite it appropriately.
+The `medical_corpus.yml` file contains hand-crafted conversations specifically designed for this project. If you use this repository, please cite it appropriately.
 
 ## Project Structure
-Travel_Chatbot/
 
 ```plaintext
-Travel_Chatbot/
+Health_Assistant_Chatbot/
+├── actions/
+│   ├── actions.py                      # Contains custom action code for Rasa chatbot
 ├── data/
-│   ├── bilingual_corpus.yml          # Bilingual conversation corpus
-├── notebooks/
-│   ├── data_preprocessing.ipynb      # Data preprocessing and EDA
-│   ├── model_training.ipynb          # Model training and tuning
-│   ├── model_evaluation.ipynb        # Model evaluation
+│   ├── Healt_advice_for_Illnesses.csv  # Data with health advice based on symptoms
+│   ├── nlu.yml                         # Contains NLU training data
+│   ├── rules.yml                       # Rules for the chatbot's behavior
+│   ├── stories.yml                     # Stories to train the dialogue model
+│   ├── symbipredict_2022.csv           # Additional dataset used for model training
 ├── scripts/
-│   ├── preprocess.py                 # Data preprocessing script
-│   ├── train.py                      # Model training script
-│   ├── evaluate.py                   # Model evaluation script
+│   ├── fine_tuning_model.py            # Script to fine-tune the chatbot model
+│   ├── new_entries.py                  # Script to add new entries to the dataset
 ├── models/
-│   ├── chatbot_model.pkl             # Trained chatbot model
-├── results/
-│   ├── evaluation_metrics.csv        # Evaluation metrics
-│   ├── confusion_matrix.png          # Confusion matrix
-├── README.md                         # Project README
+│   ├── chatbot_model.tar.gz            # Trained chatbot model
+├── results/  
+│   ├── DIETCLassifier_confusion_matrix.png  # Confusion matrix for DIET Classifier
+│   ├── DIETCLassifier_histogram.png         # Histogram for DIET Classifier performance
+│   ├── intent_confusion_matrix.png          # Confusion matrix for intent recognition
+│   ├── intent_histogram.png                 # Histogram for intent recognition performance
+│   ├── performance_plot.png                 # Performance plot of the model
+│   ├── nlu_test_results.csv                 # Test results for the NLU component
+├── test/
+│   ├── test_stories.yml                # Test stories for validating the chatbot
+├── background.png                      # Background image for the chatbot interface
+├── config.yml                          # Configuration for Rasa model
+├── credentials.yml                     # Credentials for connecting the chatbot to messaging platforms
+├── domain.yml                          # Domain file defining intents, entities, and slots
+├── endpoints.yml                       # Endpoints configuration for action server
+├── index.html                          # Web interface for the chatbot
+├── README.md                           # Project README
+├── requirements.txt                    # Python dependencies
 ```
 
 ## Usage
 
-1. **Data Preprocessing**:
-   - Execute the `data_preprocessing.ipynb` notebook to clean and preprocess the data.
-   - [Data Preprocessing Notebook](notebooks/data_preprocessing.ipynb)
+1. **Fine-Tuning the Model**:
+   - Use the `fine_tuning_model.py` script to fine-tune the chatbot model with the latest data.
+   - [Fine-Tuning Script](scripts/fine_tuning_model.py)
 
-2. **Model Training**:
-   - Use the `model_training.ipynb` notebook to train the chatbot model using the bilingual corpus.
-   - [Model Training Notebook](notebooks/model_training.ipynb)
+2. **Adding New Entries**:
+   - Add new health-related entries to the dataset using the `new_entries.py` script.
+   - [New Entries Script](scripts/new_entries.py)
 
-3. **Model Evaluation**:
-   - Evaluate the performance of the trained model using the `model_evaluation.ipynb` notebook.
-   - [Model Evaluation Notebook](notebooks/model_evaluation.ipynb)
+3. **Running the Chatbot**:
+   - Run the chatbot locally by executing the following command:
+     ```bash
+     rasa run actions --debug
+     rasa run --enable-api --cors "*" --debug
+     ```
+
+4. **Testing the Chatbot**:
+   - Validate the chatbot's responses by using the test stories provided in the `test_stories.yml` file.
 
 ## Modeling
 
-The project uses the ChatterBot library to build and train the chatbot. The chatbot is trained with the custom bilingual corpus (`bilingual_corpus.yml`) that includes a wide range of travel-related conversations in both English and Spanish.
+The project uses the Rasa framework to build and train the chatbot. The chatbot is trained with a custom medical corpus (`nlu.yml`) that includes a variety of common medical inquiries and responses.
 
-### Example Bilingual Corpus
+### Example Medical Corpus
 
-The `bilingual_corpus.yml` includes conversations like:
+The `nlu.yml` includes conversations like:
 
 ```yaml
 categories:
-- travel
+- health
 
 conversations:
-- - Where is the bathroom?
-  - El baño está al fondo a la derecha.
-- - Thank you very much.
-  - No hay de qué, fue un placer ayudarte.
-- - Excuse me, where is the restroom?
-  - El baño está al fondo a la derecha.
-- - Please, can you help me?
-  - Claro, ¿en qué puedo ayudarte?
-...
-```
+- - What are the symptoms of the flu?
+  - Common symptoms include fever, cough, sore throat, and body aches.
+- - How can I treat a cold at home?
+  - Rest, drink plenty of fluids, and take over-the-counter medications to relieve symptoms.
+- - Should I go to the doctor if I have a fever?
+  - If your fever is high or persistent, it's a good idea to consult a healthcare professional.
 
 ## Evaluation
 

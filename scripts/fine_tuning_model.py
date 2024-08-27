@@ -99,7 +99,7 @@ for epoch in epochs:
             }, ignore_index=True)
 
 # Save results to CSV
-results_df.to_csv('nlu_test_results.csv', index=False)
+results_df.to_csv('../results/nlu_test_results.csv', index=False)
 
 # Plotting the results
 # Setting up the figure and axis
