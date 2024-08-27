@@ -20,7 +20,7 @@ This repository demonstrates how to build a customized AI chatbot designed to pr
 
 Below is a snapshot of the Health Assistant Chatbot running in `index.html`:
 
-![Chatbot Running in index.html](path/to/your/screenshot.png)
+![Chatbot Running in index.html](chatbot1.png)
 
 The chatbot interface includes a welcome message, a disclaimer about its use for demonstration purposes only, and a link to the developer's GitHub profile.
 
@@ -120,6 +120,8 @@ The `actions.py` script plays a crucial role in enhancing the capabilities of th
 1. **GPT-Neo Integration for Unknown Responses**:
    - The chatbot uses a free GPT-Neo 2.7B model via the Hugging Face API to generate responses for inputs that the model does not recognize or cannot handle directly. This allows the chatbot to provide meaningful responses even when it encounters unexpected user input.
    - Alternatively, the script can be modified to run a local GPT-Neo server, which involves loading the model and tokenizer directly using the `transformers` library. This setup offers greater control over the response generation process but requires significant computational resources.
+
+   ![Chatbot calling for a GPT action .html](chatbot2.png)
 
 2. **Symptom Analysis and Health Advice**:
    - The script includes actions like `SymptomAnalysisAction`, which analyzes user-reported symptoms against a dataset (`symbipredict_2022.csv`) to predict possible illnesses. This action uses NLP techniques to normalize user input and match it against known symptoms in the dataset.
