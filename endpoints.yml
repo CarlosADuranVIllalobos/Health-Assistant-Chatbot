@@ -1,12 +1,12 @@
 # This file contains the different endpoints your bot can use.
 
 # For local server actions:
-#action_endpoint:
-#  url: "http://localhost:5055/webhook"
+action_endpoint:
+  url: "http://localhost:5055/webhook"
 
 # For internet server actions:
-action_endpoint:
-  url: "http://ec2-35-177-182-104.eu-west-2.compute.amazonaws.com:5055/webhook"
+#action_endpoint:
+#  url: "http://ec2-35-177-182-104.eu-west-2.compute.amazonaws.com:5055/webhook"
 
 
 
