@@ -99,6 +99,24 @@ conversations:
 - - Should I go to the doctor if I have a fever?
   - If your fever is high or persistent, it's a good idea to consult a healthcare professional.
 
+### Actions Description
+
+The `actions.py` script plays a crucial role in enhancing the capabilities of the chatbot by integrating external APIs, natural language processing (NLP) techniques, and customized logic to handle user interactions effectively.
+
+1. **GPT-Neo Integration for Unknown Responses**:
+   - The chatbot uses a free GPT-Neo 2.7B model via the Hugging Face API to generate responses for inputs that the model does not recognize or cannot handle directly. This allows the chatbot to provide meaningful responses even when it encounters unexpected user input.
+   - Alternatively, the script can be modified to run a local GPT-Neo server, which involves loading the model and tokenizer directly using the `transformers` library. This setup offers greater control over the response generation process but requires significant computational resources.
+
+2. **Symptom Analysis and Health Advice**:
+   - The script includes actions like `SymptomAnalysisAction`, which analyzes user-reported symptoms against a dataset (`symbipredict_2022.csv`) to predict possible illnesses. This action uses NLP techniques to normalize user input and match it against known symptoms in the dataset.
+   - The `ActionProvideIllnessAdvice` and `ActionProvideHealthInfo` actions offer health advice and detailed information about specific illnesses based on another dataset (`Health_Advice_for_Illnesses.csv`). These actions help the chatbot provide contextually relevant advice and information to users.
+
+3. **Custom Notifications and Fallbacks**:
+   - Actions like `ActionNotifyResponseGeneration` and `Simple_GPT_Action` are used to inform users when the system is generating a response or when fallback handling is required. These actions improve the user experience by providing feedback during potentially longer processing times.
+
+Overall, the `actions.py` script significantly enhances the chatbot's ability to handle complex interactions and provide valuable health-related information to users, making it a powerful tool for demonstrating the potential of AI-driven health assistants.
+
+
 ## Evaluation
 
 Model performance is assessed using metrics such as:
@@ -108,7 +126,22 @@ Model performance is assessed using metrics such as:
 - Recall
 - F1-Score
 
-Visualizations include confusion matrices.
+### Fine-Tuning the DIET Classifier
+
+The chatbot's DIET classifier was fine-tuned by experimenting with various configurations of epochs, thresholds, and learning rates to optimize its performance. The goal was to identify the best combination of these hyperparameters that would yield the highest F1 score, indicating a well-balanced model in terms of precision and recall.
+
+#### Configurations Tested
+
+The following configurations were tested:
+
+- **Epochs**: 100, 200, 500, 1000
+- **Thresholds**: 0.1, 0.3, 0.7
+- **Learning Rates**: 0.01, 0.001, 0.0001
+
+For each configuration, the DIET classifier was trained and evaluated using cross-validation. The F1 scores were calculated and logged for analysis.
+The results of these experiments were plotted to visualize the impact of varying the hyperparameters on the model's performance. The following plot illustrates the F1 scores achieved with different combinations of epochs, thresholds, and learning rates:
+
+![DIET Classifier Performance](results/performance_plot.png)
 
 ## Results
 
