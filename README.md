@@ -87,6 +87,8 @@ Health_Assistant_Chatbot/
      rasa run --enable-api --cors "*" --debug
      ```
 
+   - Open index.html in a web browser
+
 4. **Testing the Chatbot**:
    - Validate the chatbot's responses by using the test stories provided in the `test_stories.yml` file.
 
