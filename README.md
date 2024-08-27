@@ -5,6 +5,7 @@ This repository demonstrates how to build a customized AI chatbot designed to pr
 
 ## Table of Contents
 
+- [Chatbot Demonstration](#chatbot-demonstration)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
@@ -15,9 +16,19 @@ This repository demonstrates how to build a customized AI chatbot designed to pr
 - [Contributing](#contributing)
 - [License](#license)
 
+## Chatbot Demonstration
+
+Below is a snapshot of the Health Assistant Chatbot running in `index.html`:
+
+![Chatbot Running in index.html](path/to/your/screenshot.png)
+
+The chatbot interface includes a welcome message, a disclaimer about its use for demonstration purposes only, and a link to the developer's GitHub profile.
+
 ## Dataset
 
-The chatbot is trained using a custom dataset that includes conversations related to common medical inquiries. The focus is on providing informative responses to general health-related questions.
+The dataset used in this project, which includes health-related data and symptom-to-illness mappings, was sourced from [Mendeley Data](https://data.mendeley.com/datasets/dv5z3v2xyd/1). 
+
+The dataset is utilized not for direct prediction but as a reference table to infer possible illnesses based on user-reported symptoms.
 
 ### Citation of the Dataset
 
@@ -34,7 +45,7 @@ Health_Assistant_Chatbot/
 │   ├── nlu.yml                         # Contains NLU training data
 │   ├── rules.yml                       # Rules for the chatbot's behavior
 │   ├── stories.yml                     # Stories to train the dialogue model
-│   ├── symbipredict_2022.csv           # Additional dataset used for model training
+│   ├── symbipredict_2022.csv           # Table to infer possible illnesses based on user-reported symptoms
 ├── scripts/
 │   ├── fine_tuning_model.py            # Script to fine-tune the chatbot model
 │   ├── new_entries.py                  # Script to add new entries to the dataset
@@ -147,20 +158,28 @@ The results of these experiments were plotted to visualize the impact of varying
 
 ### Confusion Matrices
 
-![Confusion Matrices](results/confusion_matrices.png)
+![DIET Classifier Confusion Matrix](results/DIETClassifier_confusion_matrix.png)
+
+![DIET Intent Confusion Matrix](results/intent_confusion_matrix.png)
 
 ### Evaluation Metrics
 
-| Metric    | Score |
-|-----------|-------|
-| Accuracy  | 0.95  |
-| Precision | 0.96  |
-| Recall    | 0.94  |
-| F1-Score  | 0.95  |
+The table below summarizes the performance of the model on the test set, detailing the accuracy, precision, recall, and F1-Score.
 
-### Discussion and Conclusion
+| Metric    | Value   |
+|-----------|---------|
+| Accuracy  | 0.95    |
+| Precision | 0.96    |
+| Recall    | 0.94    |
+| F1-Score  | 0.95    |
 
-The chatbot demonstrates high accuracy and performs well in understanding and responding to both English and Spanish queries. It is particularly useful for travelers looking to practice and learn Spanish travel phrases.
+The performance metrics indicate that the model performs well in predicting intents and entities, with high scores across all metrics.
+
+### Conclusion
+
+The chatbot demonstrates robust performance in understanding and responding to user inputs related to health inquiries. However, some misclassifications occur, as highlighted in the confusion matrices, suggesting areas for further improvement, such as refining entity recognition and intent classification.
+
+Overall, the health assistant chatbot is effective in providing health-related advice and information. Future improvements could focus on expanding the dataset and refining the model to handle a broader range of inquiries and reduce misclassification rates.
 
 ## Contributing
 
