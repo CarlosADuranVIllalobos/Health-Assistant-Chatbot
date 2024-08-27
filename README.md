@@ -97,7 +97,7 @@ The project uses the Rasa framework to build and train the chatbot. The chatbot 
 ### Example Medical Corpus
 
 The `nlu.yml` includes conversations like:
-
+```plaintext
 - intent: ask_symptoms
   examples: |
     - I have [phlegm](symptom), [cough](symptom), [headache](symptom), [fever](symptom) and [sore throat](symptom)
@@ -109,6 +109,7 @@ The `nlu.yml` includes conversations like:
     - What should I take for a [headache](symptom)?
     - How do I relieve [back pain](symptom)?
     - Any suggestions for a [sore throat](symptom)?
+```
 
 ### Actions Description
 
