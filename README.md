@@ -98,17 +98,17 @@ The project uses the Rasa framework to build and train the chatbot. The chatbot 
 
 The `nlu.yml` includes conversations like:
 
-```yaml
-categories:
-- health
-
-conversations:
-- - What are the symptoms of the flu?
-  - Common symptoms include fever, cough, sore throat, and body aches.
-- - How can I treat a cold at home?
-  - Rest, drink plenty of fluids, and take over-the-counter medications to relieve symptoms.
-- - Should I go to the doctor if I have a fever?
-  - If your fever is high or persistent, it's a good idea to consult a healthcare professional.
+- intent: ask_symptoms
+  examples: |
+    - I have [phlegm](symptom), [cough](symptom), [headache](symptom), [fever](symptom) and [sore throat](symptom)
+    - My symptoms include [nausea](symptom) and [vomiting](symptom)
+    - I'm feeling [dizzy](symptom) with a [high fever](symptom)|
+      
+- intent: ask_advice
+  examples: |
+    - What should I take for a [headache](symptom)?
+    - How do I relieve [back pain](symptom)?
+    - Any suggestions for a [sore throat](symptom)?
 
 ### Actions Description
 
