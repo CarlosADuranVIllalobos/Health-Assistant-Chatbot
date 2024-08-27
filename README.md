@@ -81,7 +81,7 @@ Health_Assistant_Chatbot/
    - [New Entries Script](scripts/new_entries.py)
 
 3. **Running the Chatbot**:
-   - Run the chatbot locally by executing the following command:
+   - Run the chatbot locally by executing the following commands in separate terminals:
      ```bash
      rasa run actions --debug
      rasa run --enable-api --cors "*" --debug
