@@ -156,12 +156,6 @@ The results of these experiments were plotted to visualize the impact of varying
 
 ## Results
 
-### Confusion Matrices
-
-![DIET Classifier Confusion Matrix](results/DIETClassifier_confusion_matrix.png)
-
-![DIET Intent Confusion Matrix](results/intent_confusion_matrix.png)
-
 ### Evaluation Metrics
 
 The table below summarizes the performance of the model on the test set, detailing the accuracy, precision, recall, and F1-Score.
